@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamil Nadu 2026 — People's Policy Guide | NTK Deep Analysis</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap');
+:root{
+  --ntk:#cc0000;        /* NTK = RED */
+  --dmk:#7B3F00;        /* DMK = BROWN */
+  --aiadmk:#1a6b1a;     /* AIADMK = GREEN */
+  --tvk:#c8a000;        /* TVK = YELLOW/GOLD */
+  --ntk-light:#fff5f5;
+  --dmk-light:#fdf5ef;
+  --aiadmk-light:#f0fdf0;
+  --tvk-light:#fffbeb;
+  --dark:#1a1a2e;
+  --bg:#f8f4ef;
+  --text:#1a1a1a;
+  --border:#d4c5a9;
+  --accent:#c9a84c;
+  --good:#16a34a;
+  --bad:#dc2626;
+  --warn:#ea580c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--text);line-height:1.8;font-size:16px}
+
+/* HEADER */
+.header{background:var(--dark);color:#fff;padding:48px 30px 40px;text-align:center;border-bottom:4px solid var(--accent);position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 60px,rgba(201,168,76,.04) 60px,rgba(201,168,76,.04) 61px)}
+.header h1{font-family:'Playfair Display',serif;font-size:2.4em;font-weight:900;position:relative;margin-bottom:8px;line-height:1.2}
+.header .sub{font-size:.95em;color:var(--accent);font-style:italic;position:relative;margin-bottom:16px}
+.header .tags{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:.72em;color:#bbb;position:relative}
+.hdr-tag{background:rgba(255,255,255,.08);padding:3px 10px;border-radius:3px;border:1px solid rgba(255,255,255,.12)}
+
+/* PARTY LEGEND BAR */
+.party-bar{display:flex;justify-content:center;align-items:center;gap:0;background:#fff;border-bottom:3px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.1)}
+.pb-item{flex:1;max-width:280px;display:flex;align-items:center;justify-content:center;gap:10px;padding:12px 16px;border-right:1px solid var(--border);cursor:pointer;transition:background .2s}
+.pb-item:last-child{border-right:none}
+.pb-item:hover{background:#f8f4ef}
+.pb-symbol{width:56px;height:56px;flex-shrink:0;object-fit:contain}
+.pb-name{font-family:'JetBrains Mono',monospace;font-size:.78em;font-weight:700;line-height:1.2}
+.pb-ntk{color:var(--ntk)}.pb-dmk{color:var(--dmk)}.pb-aiadmk{color:var(--aiadmk)}.pb-tvk{color:var(--tvk)}
+
+/* MAIN WRAP */
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* SECTIONS */
+.sec{margin:42px 0;background:#fff;border-radius:6px;box-shadow:0 1px 6px rgba(0,0,0,.07);overflow:hidden}
+.sec-head{padding:24px 32px 20px;border-bottom:1px solid var(--border)}
+.sec-label{font-family:'JetBrains Mono',monospace;font-size:.72em;font-weight:700;letter-spacing:2px;color:var(--accent);margin-bottom:6px}
+.sec-title{font-family:'Playfair Display',serif;font-size:1.7em;font-weight:900;color:var(--dark);line-height:1.2}
+.sec-subtitle{font-size:.92em;color:#666;margin-top:6px;font-style:italic}
+.sec-body{padding:28px 32px}
+
+/* NTK SPECIAL SECTIONS */
+.ntk-section .sec-head{background:linear-gradient(135deg,#1a0000,#330000);border-bottom:none}
+.ntk-section .sec-label{color:#ff9999}
+.ntk-section .sec-title{color:#fff}
+.ntk-section .sec-subtitle{color:#ffcccc}
+.ntk-highlight{background:var(--ntk-light);border:2px solid var(--ntk);border-radius:6px;padding:22px 26px;margin:18px 0}
+.ntk-highlight-title{font-family:'Playfair Display',serif;font-size:1.1em;font-weight:700;color:var(--ntk);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+
+/* PARTY CARDS */
+.party-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:18px 0}
+.pcard{border-radius:5px;overflow:hidden;border:1px solid var(--border)}
+.pcard-head{padding:12px 16px;display:flex;align-items:center;gap:10px}
+.pcard-head .psym{width:28px;height:28px;object-fit:contain}
+.pcard-name{font-family:'Playfair Display',serif;font-size:1em;font-weight:700;color:#fff}
+.pcard-body{padding:14px 16px;font-size:.88em;background:#fafaf8}
+.pcard-body ul{padding-left:18px}
+.pcard-body li{margin-bottom:5px}
+
+/* PARTY COLORS FOR CARDS */
+.ntk-card .pcard-head{background:var(--ntk)}
+.party-bar .pb-item:first-child .pb-symbol{width:70px;height:70px}
+.ntk-card .pcard-head .psym{width:36px;height:36px}
+.party-bar .pb-item:nth-child(3) .pb-symbol,.party-bar .pb-item:nth-child(4) .pb-symbol{width:54px;height:54px}
+.aiadmk-card .pcard-head .psym,.tvk-card .pcard-head .psym{width:26px;height:26px}
+.dmk-card .pcard-head{background:var(--dmk)}
+.aiadmk-card .pcard-head{background:var(--aiadmk)}
+.tvk-card .pcard-head{background:var(--tvk)}
+
+/* TABLES */
+.tw{overflow-x:auto;margin:16px 0;border:1px solid var(--border);border-radius:4px}
+table{width:100%;border-collapse:collapse;font-size:.84em}
+thead tr{background:var(--dark);color:#fff}
+th{padding:10px 12px;text-align:left;font-family:'JetBrains Mono',monospace;font-size:.76em;letter-spacing:.5px}
+td{padding:9px 12px;border-bottom:1px solid #ebe3d8;vertical-align:top;line-height:1.45}
+tr:last-child td{border-bottom:none}
+tr:hover{background:#faf7f3}
+.ntk-row{background:var(--ntk-light)!important}
+.ntk-row:hover{background:#ffe8e8!important}
+
+/* TAGS */
+.tag{display:inline-block;padding:2px 8px;border-radius:3px;font-size:.72em;font-family:'JetBrains Mono',monospace;font-weight:700;white-space:nowrap}
+.t-ntk{background:var(--ntk);color:#fff}
+.t-dmk{background:var(--dmk);color:#fff}
+.t-aiadmk{background:var(--aiadmk);color:#fff}
+.t-tvk{background:var(--tvk);color:#1a1a1a}
+.t-good{background:#dcfce7;color:#14532d}
+.t-bad{background:#fee2e2;color:#991b1b}
+.t-warn{background:#fef3c7;color:#92400e}
+.t-grey{background:#f1f5f9;color:#475569}
+.t-debt{background:#1a1a2e;color:#fff}
+.t-copied{background:#7c3aed;color:#fff}
+
+/* CALLOUT BOXES */
+.box{padding:16px 20px;border-radius:4px;margin:14px 0;font-size:.9em;line-height:1.6}
+.box-ntk{background:var(--ntk-light);border-left:4px solid var(--ntk)}
+.box-good{background:#f0fdf4;border-left:4px solid #22c55e}
+.box-bad{background:#fff1f2;border-left:4px solid #f43f5e}
+.box-warn{background:#fff7ed;border-left:4px solid var(--warn)}
+.box-blue{background:#eff6ff;border-left:4px solid #3b82f6}
+.box-dark{background:var(--dark);color:#fff;border-left:4px solid var(--accent)}
+.box strong{font-weight:700}
+
+/* KEY INSIGHT */
+.insight{background:linear-gradient(135deg,var(--dark),#0f0f1e);color:#fff;padding:22px 26px;border-radius:6px;margin:24px 0;border-left:5px solid var(--ntk)}
+.insight.general{border-left-color:var(--accent)}
+.insight-label{font-family:'JetBrains Mono',monospace;font-size:.7em;color:var(--accent);letter-spacing:2px;font-weight:700;margin-bottom:8px}
+.insight p{font-size:.93em;line-height:1.65;margin:0}
+
+/* STAT BOXES */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+.stat{padding:18px;background:#fafaf8;border:1px solid var(--border);border-radius:5px;text-align:center}
+.stat .big{font-family:'Playfair Display',serif;font-size:1.65em;font-weight:700;color:var(--dark)}
+.stat .sm{font-size:.72em;color:#666;font-family:'JetBrains Mono',monospace;margin-top:4px;line-height:1.4}
+.stat .src{font-size:.66em;color:#999;margin-top:3px}
+.ntk-stat .big{color:var(--ntk)}
+.ntk-stat{border-top:3px solid var(--ntk)}
+
+/* COMPARISON FLOW */
+.vs-row{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:10px 0;border:1px solid var(--border);border-radius:5px;overflow:hidden}
+.vs-a{background:var(--ntk-light);padding:14px 16px;border-right:1px solid var(--border)}
+.vs-b{background:#f8f4ef;padding:14px 16px}
+.vs-label{font-family:'JetBrains Mono',monospace;font-size:.72em;font-weight:700;margin-bottom:6px}
+.vs-ntk-label{color:var(--ntk)}
+.vs-other-label{color:#666}
+.vs-content{font-size:.87em;line-height:1.5}
+
+/* SCORE BARS */
+.score-section{margin:16px 0}
+.score-row{display:flex;align-items:center;gap:10px;margin:8px 0}
+.score-label{font-size:.8em;font-family:'JetBrains Mono',monospace;color:var(--text);width:180px;flex-shrink:0;line-height:1.2}
+.score-track{flex:1;background:#e8e0d5;height:22px;border-radius:3px;overflow:hidden}
+.score-fill{height:100%;display:flex;align-items:center;padding-left:8px;font-family:'JetBrains Mono',monospace;font-size:.7em;font-weight:700;color:#fff;border-radius:3px}
+.score-val{font-family:'JetBrains Mono',monospace;font-size:.78em;color:#666;width:36px;text-align:right}
+
+/* TIMELINE */
+.timeline{position:relative;padding-left:30px;margin:16px 0}
+.timeline::before{content:'';position:absolute;left:10px;top:0;bottom:0;width:2px;background:var(--ntk)}
+.tl-item{position:relative;margin-bottom:20px}
+.tl-dot{position:absolute;left:-24px;top:4px;width:14px;height:14px;background:var(--ntk);border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 2px var(--ntk)}
+.tl-year{font-family:'JetBrains Mono',monospace;font-size:.76em;color:var(--ntk);font-weight:700}
+.tl-content{font-size:.88em;margin-top:3px}
+
+/* COPIED BADGE */
+.copied-note{background:#7c3aed;color:#fff;font-family:'JetBrains Mono',monospace;font-size:.7em;padding:2px 8px;border-radius:3px;margin-left:6px}
+
+/* CHART CONTAINERS */
+.chart-wrap{background:#fafaf8;border:1px solid var(--border);border-radius:5px;padding:18px;margin:18px 0}
+.chart-title{font-family:'Playfair Display',serif;font-size:.95em;font-weight:700;color:var(--dark);margin-bottom:14px;text-align:center}
+
+/* BILL GATES SECTION */
+.gates-comparison{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:16px 0}
+
+/* FOOTER */
+.footer{background:var(--dark);color:#aaa;text-align:center;padding:30px;font-size:.78em;font-family:'JetBrains Mono',monospace;margin-top:48px;line-height:1.7}
+
+/* NTK SYMBOL SVG */
+.ntk-sym-lg{width:54px;height:54px}
+.ntk-sym-sm{width:28px;height:28px}
+
+/* SIMPLE ICON STYLES */
+h3{font-family:'Playfair Display',serif;font-size:1.15em;color:var(--dark);margin:22px 0 10px;padding-left:12px;border-left:3px solid var(--ntk)}
+h3.general{border-left-color:var(--accent)}
+h4{font-size:.95em;font-weight:700;margin:14px 0 6px}
+p{margin-bottom:12px}
+ul,ol{padding-left:22px;margin-bottom:12px}li{margin-bottom:5px}
+.src-note{font-size:.74em;color:#888;font-style:italic;margin-top:6px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0}
+
+@media(max-width:720px){.party-grid,.grid2,.stats,.gates-comparison,.vs-row{grid-template-columns:1fr}.party-bar{flex-wrap:wrap}.pb-item{min-width:50%}.sec-body{padding:20px 16px}.sec-head{padding:18px 16px}.header h1{font-size:1.7em}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">  <h1>Tamil Nadu 2026 — People's Policy Guide</h1>
+  <div class="sub">Complete NTK Analysis + All Parties Compared in Plain Language | Updated April 2026</div>
+  <div class="tags">
+    <span class="hdr-tag">Election: 23 April 2026</span>
+    <span class="hdr-tag">NTK Symbol: Farmer Carrying Plough (ECI Reserved)</span>
+    <span class="hdr-tag">NTK Vote Share: 1.1% → 8.19% in 13 years</span>
+    <span class="hdr-tag">Sources: ECI · ANI · New Kerala · The News Mill · Land Report · Global Agri-Investor Signals · RBI · PRS · ICRA · AMUL · NDDB · AAVIN</span>
+  </div>
+</div>
+
+<!-- PARTY SYMBOL BAR -->
+<div class="party-bar">
+
+  <!-- NTK: Farmer Carrying Plough (ECI Official Symbol, May 2025) -->
+  <div class="pb-item">
+    <a href="https://www.naamtamilar.org/2020/05/ntk-logo-seeman-thalaivar-print-images-download/" target="_blank" rel="noopener noreferrer"><img class="pb-symbol" src="https://i0.wp.com/www.naamtamilar.org/wp-content/uploads/2020/05/vivasayi-chinnam-naam-tamilar-katchi-election-symbol-ntk-2025-2.png?resize=696%2C717&amp;ssl=1" alt="NTK symbol: Farmer Carrying Plough" loading="lazy" decoding="async"></a>
+    <div class="pb-name pb-ntk">NTK<br><span style="font-size:.7em;font-weight:400">Seeman</span></div>
+  </div>
+
+  <!-- DMK: Rising Sun (classic symbol — semicircle sun with rays rising above horizon line) -->
+  <div class="pb-item">
+    <img class="pb-symbol" src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian_election_symbol_rising_sun.svg" alt="DMK symbol: Rising Sun" loading="lazy" decoding="async">
+    <div class="pb-name pb-dmk">DMK<br><span style="font-size:.7em;font-weight:400">M.K. Stalin</span></div>
+  </div>
+
+  <!-- AIADMK: Two Leaves (two broad leaves side by side with stems joining at base) -->
+  <div class="pb-item">
+    <img class="pb-symbol" src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Election_Symbol_Two_Leaves_2.svg" alt="AIADMK symbol: Two Leaves" loading="lazy" decoding="async">
+    <div class="pb-name pb-aiadmk">AIADMK<br><span style="font-size:.7em;font-weight:400">Edappadi K.P.</span></div>
+  </div>
+
+  <!-- TVK: Whistle (referee/sports whistle shape — body + mouthpiece + ball chamber + sound waves) -->
+  <div class="pb-item">
+    <img class="pb-symbol" src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Election_Symbol_Whistle.png" alt="TVK symbol: Whistle" loading="lazy" decoding="async">
+    <div class="pb-name pb-tvk">TVK<br><span style="font-size:.7em;font-weight:400">Vijay</span></div>
+  </div>
+
+</div>
+
+<div class="wrap">
+
+<!-- ====================================================
+     SECTION A: NTK ORIGIN STORY — THE PARTY MEDIA IGNORES
+     ==================================================== -->
+<div class="sec ntk-section" id="sa">
+  <div class="sec-head">
+    <div class="sec-label">SECTION A</div>
+    <div class="sec-title">🌾 Who Is NTK and Why Does Media Ignore Them?</div>
+    <div class="sec-subtitle">Understanding the party that Tamil Nadu's corporate media refuses to take seriously</div>
+  </div>
+  <div class="sec-body">
+
+    <div class="box box-ntk">
+      <strong>The Media Problem:</strong> Tamil Nadu's major TV channels (Sun TV — DMK linked; Jaya TV — AIADMK linked; Vijay TV — now TVK linked) actively ignore or mock NTK. This is not because NTK has bad policies. It is because NTK refuses to take advertisements from alcohol companies, real estate developers, and mining corporations — the same companies that own or sponsor these channels. A party that threatens TASMAC, quarry businesses, and middlemen will naturally get no media love.
+    </div>
+
+    <h3>NTK's Journey — From 1.1% to State Party Recognition in 13 Years</h3>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2010</div>
+        <div class="tl-content">Seeman re-founds NTK on 18 May. Party contests with borrowed symbols. Zero media coverage. Cadres build grassroots with their own money.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2011 Assembly</div>
+        <div class="tl-content">1.1% vote share. 0 seats. Media calls it "insignificant protest party."</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2019 Lok Sabha</div>
+        <div class="tl-content">3.91% — first major jump. Introduces 50% women candidates — first party in TN history to do this. Still 0 seats.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2021 Assembly</div>
+        <div class="tl-content">6.89% — becomes 3rd largest party by votes in Tamil Nadu. Comes 3rd in multiple constituencies. Media still largely ignores. 0 seats.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2024 Lok Sabha</div>
+        <div class="tl-content">8.19% — best ever. 12 candidates cross 1 lakh votes. ECI grants State Party recognition (May 2025). Allots permanent symbol: <strong>"Farmer Carrying Plough."</strong> 0 seats.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2026 Assembly</div>
+        <div class="tl-content">Releases 462-page detailed manifesto (19 March). Contests all 234 seats with 50% women candidates. First election as officially recognised State Party. Projected 8–12% votes.</div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat ntk-stat">
+        <div class="big">462 Pages</div>
+        <div class="sm">NTK 2026 MANIFESTO</div>
+        <div class="src">Most detailed of any TN party · Released 19 March 2026</div>
+      </div>
+      <div class="stat ntk-stat">
+        <div class="big">50%</div>
+        <div class="sm">WOMEN CANDIDATES</div>
+        <div class="src">Since 2019 · No other TN party gives 50% to women</div>
+      </div>
+      <div class="stat ntk-stat">
+        <div class="big">8.19%</div>
+        <div class="sm">VOTE SHARE 2024</div>
+        <div class="src">ECI Verified · Growing every election since 2011</div>
+      </div>
+    </div>
+
+    <div class="insight">
+      <div class="insight-label">WHY THIS MATTERS</div>
+      <p>NTK has grown from 1.1% to 8.19% in 13 years — without a film star, without a dynasty, without corporate funding, without TASMAC advertisements, and without media support. This is one of India's most remarkable political growth stories built entirely on ideology and grassroots work. The party that threatens the most powerful business interests (alcohol, mining, real estate) will always be the party most trolled by media owned by those very interests.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================
+     SECTION B: TVK COPIED FROM NTK — THE EVIDENCE
+     ==================================================== -->
+<div class="sec" id="sb">
+  <div class="sec-head">
+    <div class="sec-label">SECTION B</div>
+    <div class="sec-title">📋 "TVK Copied from NTK" — What Is Original and What Is Borrowed?</div>
+    <div class="sec-subtitle">Honest comparison: who proposed these ideas first?</div>
+  </div>
+  <div class="sec-body">
+
+    <div class="box box-blue">
+      <strong>Important Note:</strong> This section is based on documented evidence of NTK's long-standing positions vs TVK's recent manifesto. The goal is not to discredit TVK — even if a policy is adopted from another party, it is good if it benefits people. But voters deserve to know who thought of it first.
+    </div>
+
+    <h3 class="general">Policies That NTK Has Championed for Years — Now in TVK's Manifesto</h3>
+    <div class="tw">
+      <table>
+        <thead>
+          <tr><th>Policy</th><th>NTK POSITION (Original)</th><th>TVK 2026 MANIFESTO</th><th>Who Had It First?</th></tr>
+        </thead>
+        <tbody>
+          <tr class="ntk-row">
+            <td><strong>CCTV everywhere + women's safety surveillance</strong></td>
+            <td>NTK demanded CCTV in all public places as core women's safety demand since 2014. Seeman made this a consistent campaign promise in every election.</td>
+            <td>TVK: "Zero Dark Spots — CCTV cameras everywhere, 24/7 command centres, panic buttons"</td>
+            <td><span class="tag t-ntk">NTK 2014</span> <span class="copied-note">TVK 2026</span></td>
+          </tr>
+          <tr class="ntk-row">
+            <td><strong>Police welfare — better pay, leave, hospitals</strong></td>
+            <td>NTK consistently advocated for police personnel welfare since 2016 — arguing that a well-paid, respected police force serves people better than a corrupt, overworked one.</td>
+            <td>TVK: Police welfare, better facilities, duty-hour reforms</td>
+            <td><span class="tag t-ntk">NTK 2016</span> <span class="copied-note">TVK 2026</span></td>
+          </tr>
+          <tr class="ntk-row">
+            <td><strong>Free sanitary pads for women</strong></td>
+            <td>NTK included menstrual hygiene as part of its women's health framework since 2019 election.</td>
+            <td>TVK: "Free sanitary pads via ration shops and schools"</td>
+            <td><span class="tag t-ntk">NTK 2019</span> <span class="copied-note">TVK 2026</span></td>
+          </tr>
+          <tr class="ntk-row">
+            <td><strong>Farmer Occupation = Government Service</strong></td>
+            <td>NTK proposed declaring farming a "national occupation" with government service status — meaning farmer income security — since 2021.</td>
+            <td>TVK: Higher farmer support prices, farmer income security</td>
+            <td><span class="tag t-ntk">NTK 2021</span> <span class="tag t-warn">TVK Partial</span></td>
+          </tr>
+          <tr class="ntk-row">
+            <td><strong>Prohibition / TASMAC closure</strong></td>
+            <td>NTK's founding position. Seeman has demanded TASMAC ban every single year since 2010. Always linked women's safety to TASMAC.</td>
+            <td>TVK: "Phased closure of TASMAC, drug-free Tamil Nadu" — weaker version</td>
+            <td><span class="tag t-ntk">NTK 2010</span> <span class="tag t-tvk">TVK Softer</span></td>
+          </tr>
+          <tr class="ntk-row">
+            <td><strong>Anti-drug youth programs in schools</strong></td>
+            <td>NTK proposed community-level anti-drug councils with school involvement since 2016.</td>
+            <td>TVK: "Anti-drug forums in schools and colleges"</td>
+            <td><span class="tag t-ntk">NTK 2016</span> <span class="copied-note">TVK 2026</span></td>
+          </tr>
+          <tr class="ntk-row">
+            <td><strong>Mandatory politician family in govt schools</strong></td>
+            <td>NTK's core governance reform — politicians' children must study in government schools to force quality improvement. Part of every manifesto since 2011.</td>
+            <td>Not in TVK manifesto</td>
+            <td><span class="tag t-ntk">NTK Exclusive</span></td>
+          </tr>
+          <tr>
+            <td><strong>75% local job reservation in private companies</strong></td>
+            <td>NTK demanded 100% local Tamil reservation in private companies since 2016.</td>
+            <td>TVK: 75% local hiring with SGST subsidy incentive</td>
+            <td><span class="tag t-ntk">NTK</span> + <span class="tag t-tvk">TVK (incentive model)</span></td>
+          </tr>
+          <tr>
+            <td><strong>Oppose Parandur Airport / land acquisition for corporations</strong></td>
+            <td>NTK first protested Parandur airport in 2022 as farmland destruction for corporate interest.</td>
+            <td>TVK: Explicitly says "scrap Parandur airport"</td>
+            <td><span class="tag t-ntk">NTK 2022</span> <span class="copied-note">TVK 2026</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box box-ntk">
+      <strong>The Fair Conclusion:</strong> TVK adopted many NTK positions — but usually in a diluted, more politically palatable form. NTK says "total TASMAC ban"; TVK says "phased closure." NTK says "100% local jobs"; TVK says "75% with incentives." NTK says "politicians' children in government schools"; TVK does not say this. The original ideas belong to NTK; the politically safer versions belong to TVK. This is how political change actually works — the radical party says it first, the mainstream party copies it softer, and eventually it becomes policy.
+    </div>
+
+    <div class="insight">
+      <div class="insight-label">KEY INSIGHT — WHO SHAPES THE DEBATE</div>
+      <p>NTK has been Tamil Nadu's policy originator for 15 years — the party that forces other parties to adopt better policies by making those positions popular enough that copying becomes necessary. This is NTK's real political power even without winning seats: it moves the entire policy conversation. Every time TVK announces a CCTV safety plan or TASMAC phase-out, they are acknowledging that NTK was right. The tragedy is that Seeman gets no credit for it in mainstream media.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================
+     SECTION C: WATER SELF-SUFFICIENCY — NTK's WATER PLAN
+     ==================================================== -->
+<div class="sec ntk-section" id="sc">
+  <div class="sec-head">
+    <div class="sec-label">SECTION C — NTK EXCLUSIVE POLICY</div>
+    <div class="sec-title">💧 Water Independence: Never Beg Another State for Water Again</div>
+    <div class="sec-subtitle">NTK's water self-sufficiency plan through dams, ponds, and lakes — ending Cauvery conflicts forever</div>
+  </div>
+  <div class="sec-body">
+
+    <div class="box box-ntk">
+      <strong>The Problem Nobody Else Solves:</strong> Every year, Tamil Nadu and Karnataka fight over Cauvery water. Farmers suffer. Courts are flooded with cases. Politicians make speeches. But the water problem continues for 50+ years. Why? Because DMK and AIADMK treat water as a political issue to fight over, not an engineering problem to solve permanently. NTK's approach is completely different: <strong>Tamil Nadu must become water-self-sufficient so we never need to beg any neighbouring state for water.</strong>
+    </div>
+
+    <h3>The Current Water Crisis — Why Tamil Nadu Fights With Karnataka, Kerala, and Andhra</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>River</th><th>States Involved</th><th>Problem</th><th>Annual Impact</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cauvery</strong></td><td>Tamil Nadu vs Karnataka</td><td>Karnataka builds dams (Mekedatu) reducing TN's share; refuses to release water during drought; Supreme Court orders ignored</td><td>Delta farmers lose 2–3 crops/year; ₹8,000–15,000 Cr agricultural loss in drought years</td></tr>
+          <tr><td><strong>Mullaperiyar</strong></td><td>Tamil Nadu vs Kerala</td><td>Dam built by TN is in Kerala's territory; Kerala wants it demolished; TN wants water level raised to 152 ft</td><td>5 lakh acres in Madurai, Dindigul, Theni, Idukki depend on this water</td></tr>
+          <tr><td><strong>Parambikulam-Aliyar</strong></td><td>Tamil Nadu vs Kerala</td><td>Agreement expired; renegotiation stalled; water not flowing as agreed</td><td>Coimbatore, Tiruppur farmers face irrigation uncertainty every year</td></tr>
+          <tr><td><strong>Godavari-Krishna</strong></td><td>Tamil Nadu vs Andhra</td><td>Proposed river linking project stuck in inter-state politics for decades</td><td>Northern TN districts (Villupuram, Cuddalore) remain rain-dependent</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>NTK's Solution: Build Water Capacity Inside Tamil Nadu</h3>
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        NTK's Water Manifesto — Complete Framework
+      </div>
+      <div class="grid2">
+        <div>
+          <h4 style="color:var(--ntk)">🏗️ Build New Dams Within Tamil Nadu</h4>
+          <ul>
+            <li><strong>New dams on Western Ghats rivers:</strong> Capture rainwater within Tamil Nadu before it flows to sea or neighbouring states</li>
+            <li>Identify 50+ dam sites where TN rivers (Thamirabarani, Vaigai, Palar, Cheyyar, Poondi) can store more water</li>
+            <li>Build check dams on every stream in every taluk — small dams that cost ₹5–50 lakh each but recharge groundwater dramatically</li>
+            <li><strong>Goal:</strong> Triple Tamil Nadu's water storage capacity from 350 TMC to 1,000+ TMC within 15 years</li>
+          </ul>
+          <h4 style="color:var(--ntk);margin-top:14px">🌴 Palmyra Trees — Nature's Water Tanks</h4>
+          <ul>
+            <li>NTK specifically promises <strong>large-scale palmyra tree plantation</strong> to protect groundwater</li>
+            <li>Palmyra roots go 30–40 feet deep — they access and recharge deep aquifers that seasonal wells cannot</li>
+            <li>One palmyra tree recharges approximately 500 litres of groundwater per rain event</li>
+            <li>Planting 10 crore palmyra trees = 50,000 crore litres additional groundwater recharge annually</li>
+            <li>Traditional Tamil practice — Seeman says: "Our ancestors planted palmyra for a reason — it is Tamil Nadu's natural water management system"</li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color:var(--ntk)">🏞️ Restore Every Pond and Lake Using Traditional Methods</h4>
+          <ul>
+            <li>Tamil Nadu has <strong>39,000+ water bodies</strong> — ponds, tanks, lakes — most are encroached, silted, or dead</li>
+            <li>NTK proposes restoring ALL of them using traditional <em>kudimaramathu</em> (community-maintained) methods</li>
+            <li>Traditional tank systems (eri system) worked for 2,000+ years before British mismanagement destroyed them</li>
+            <li>Each restored tank stores 10–500 million litres; provides irrigation for 50–5,000 acres</li>
+            <li>If 39,000 tanks are restored: additional storage of 390 TMC — more than TN's current total storage</li>
+          </ul>
+          <h4 style="color:var(--ntk);margin-top:14px">🌊 Rain Harvesting — Every Drop Stays in Tamil Nadu</h4>
+          <ul>
+            <li>TN receives 1,000–3,000 mm rainfall in most districts — enough to be fully water-self-sufficient</li>
+            <li>Problem: 80% of rainwater runs off to sea within 72 hours because we have destroyed the natural retention systems</li>
+            <li>NTK: Mandatory rainwater harvesting for all buildings, roads, and public spaces — government leads with all government buildings</li>
+            <li>Roof-top rainwater harvesting in every home — state provides tank and installation support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h3>Why This Ends Interstate Water Conflicts</h3>
+    <div class="vs-row">
+      <div class="vs-a">
+        <div class="vs-label vs-ntk-label">🔴 NTK APPROACH</div>
+        <div class="vs-content">
+          Build Tamil Nadu's own water storage → Tamil Nadu does not need Karnataka's Cauvery → Tamil Nadu negotiates from strength, not desperation → Cauvery conflict becomes manageable, not survival issue → Farmers get reliable water regardless of what Karnataka does
+        </div>
+      </div>
+      <div class="vs-b">
+        <div class="vs-label vs-other-label">Others' Approach (DMK, AIADMK)</div>
+        <div class="vs-content">
+          Demand water from Karnataka every year → Karnataka refuses → Court cases → Protests → Politicians make speeches → Farmers suffer → Same cycle repeats next year. This has continued for 50 years with zero structural solution.
+        </div>
+      </div>
+    </div>
+
+    <h3 class="general">What Other Parties Say on Water</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Party</th><th>Water Policy</th><th>Self-Sufficiency Focus?</th><th>Verdict</th></tr></thead>
+        <tbody>
+          <tr class="ntk-row"><td><strong>NTK 🔴</strong></td><td>Build new dams in TN; restore 39,000 tanks; palmyra plantation; rainwater harvest; water self-sufficiency</td><td>✅ Full focus — eliminate dependency on neighbouring states</td><td><span class="tag t-ntk">Only party with permanent solution</span></td></tr>
+          <tr><td>AIADMK 🟢</td><td>River linking projects (Cauvery-Vaigai-Gundar, Godavari-Cauvery); Athikadavu-Avinashi Phase 2; Sarabanga lift irrigation; Kudimaramathu</td><td>⚠️ Partial — still dependent on interstate river linking</td><td><span class="tag t-aiadmk">Most detailed water engineering plan; but still needs other states' rivers</span></td></tr>
+          <tr><td>DMK 🟤</td><td>Kudimaramathu continuation; some new schemes; Cauvery demands to Karnataka; metro flood prevention</td><td>❌ Reactive — fights for water, doesn't build self-sufficiency</td><td><span class="tag t-dmk">Good maintenance; no structural independence</span></td></tr>
+          <tr><td>TVK 🟡</td><td>MSP for farmers; water supply schemes; some promises — limited water-specific policy detail</td><td>❌ Not specifically addressed</td><td><span class="tag t-tvk">Water is weakest TVK policy area</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="insight">
+      <div class="insight-label">KEY INSIGHT — WATER SELF-SUFFICIENCY</div>
+      <p>Tamil Nadu's water wars with Karnataka, Kerala, and Andhra are 50-year-old conflicts with no end in sight under the current political approach. NTK is the only party that says: instead of fighting for water from other states, let's build enough storage within Tamil Nadu to never need it. The traditional eri (tank) system that maintained 39,000 water bodies for 2,000 years was destroyed by British land revenue policy. NTK wants to restore it. This is not a new idea — it is recovering a system that WORKED. The palmyra plantation policy is especially brilliant: it is free groundwater recharge using Tamil Nadu's own heritage tree that also provides food, toddy (traditional, not TASMAC), crafts, and shade. This is ecological economics at its most sophisticated.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================
+     SECTION D: GLOBAL AGRICULTURE INVESTMENT MODEL — CORRECT ANALYSIS
+     ==================================================== -->
+<div class="sec" id="sd">
+  <div class="sec-head">
+    <div class="sec-label">SECTION D — AGRICULTURE ECONOMY TRANSFORMATION</div>
+    <div class="sec-title">🌾 Global Agriculture Wealth Model — Beyond Bill Gates</div>
+    <div class="sec-subtitle">Billionaires, investment groups, and countries are treating agriculture as long-term revenue infrastructure.</div>
+  </div>
+  <div class="sec-body">
+
+    <div class="box box-blue">
+      <strong>Your Exact Point (Expanded):</strong> Bill Gates is one signal, not the only signal. Across global markets, high-net-worth investors, large farm investment groups, and agritech-focused countries are treating agriculture as a strategic long-duration asset. NTK's argument fits that logic: Tamil Nadu should use government/underused land for organised, technology-enabled farming, processing, and storage that create permanent jobs and recurring revenue.
+    </div>
+
+    <h3 class="general">Global Farmland Investment Signals (Practical View)</h3>
+    <div class="stats">
+      <div class="stat">
+        <div class="big">2,75,000</div>
+        <div class="sm">ACRES LINKED TO BILL GATES-ASSOCIATED U.S. FARMLAND HOLDINGS</div>
+        <div class="src">Confirmed by Land Report · Cascade Investment LLC · Across 19 states</div>
+      </div>
+      <div class="stat">
+        <div class="big">John Malone,<br>Ted Turner</div>
+        <div class="sm">OTHER LARGE U.S. LAND INVESTORS OFTEN TRACKED IN LAND RANKINGS</div>
+        <div class="src">Shows farmland is a multi-investor asset class, not a one-person trend</div>
+      </div>
+      <div class="stat">
+        <div class="big">Israel, Netherlands,<br>Brazil, Vietnam</div>
+        <div class="sm">COUNTRY MODELS USING AGRI-TECH + VALUE-ADDED EXPORT CHAINS</div>
+        <div class="src">Irrigation, seeds, logistics, and processing convert farms into long-term revenue engines</div>
+      </div>
+    </div>
+
+    <h3 class="general">Why Global Capital and High-Performing Countries Back Agriculture</h3>
+    <div class="box box-blue">
+      Bill Gates's public comments still matter: productivity + jobs are central to farmland investment. But the larger pattern is wider than one individual: global private capital and government-backed country models invest in agriculture because food demand is permanent, land is strategic, and value-added processing creates stable, compounding income.<br><br>
+      <strong>Translation:</strong> Agriculture + technology + processing + logistics can produce permanent jobs, food security, export revenue, and district-level wealth. This is exactly the NTK-style structural argument for Tamil Nadu.
+    </div>
+
+    <h3>How Tamil Nadu Government Should Apply This Model (NTK's Vision)</h3>
+    <div class="gates-comparison">
+      <div class="pcard">
+        <div class="pcard-head" style="background:var(--dmk)">
+          <div class="pcard-name">Global Investor Model (U.S. + International Signals)</div>
+        </div>
+        <div class="pcard-body">
+          <ul>
+            <li>Professional management — not political appointees</li>
+            <li>Technology-driven — precision farming, AI crop management</li>
+            <li>Scale economies — large tracts = better equipment utilisation</li>
+            <li>Leased to farmers who operate with guidance = knowledge transfer</li>
+            <li>Crop diversity — potatoes, soybeans, corn, wheat based on soil</li>
+            <li>Infrastructure built (irrigation, storage) before farming</li>
+            <li>Long-term returns come from land value + productivity gains + value-added processing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="pcard-head" style="background:var(--ntk)">
+          <div class="pcard-name">NTK's Tamil Nadu Government Farm Model</div>
+        </div>
+        <div class="pcard-body">
+          <ul>
+            <li>Government manages through farmer cooperatives — farmers own the cooperative</li>
+            <li>Technology: drones, AI crop advisory, precision irrigation IN Tamil agriculture</li>
+            <li>Tamil Nadu has 30+ lakh acres of wasteland/government land — can farm productively</li>
+            <li>Lease to SHG women farmers + tribal farmers + Dalit farmers (equity-first)</li>
+            <li>Crop based on soil + market: turmeric, drumstick, sesame, millets, vegetables</li>
+            <li>Cold storage in every district = no post-harvest loss</li>
+            <li>Permanent jobs: uneducated farm workers + ITI technicians + graduate managers + engineer innovators</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h3>Permanent Jobs vs Temporary Jobs — NTK's Core Argument</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Job Type</th><th>IT/GCC (DMK Model)</th><th>Agriculture Cooperative (NTK Model)</th></tr></thead>
+        <tbody>
+          <tr><td>Who can apply</td><td>Engineering graduate minimum</td><td>No education requirement for most roles</td></tr>
+          <tr><td>Location</td><td>Chennai / Coimbatore only</td><td>Every district, every village</td></tr>
+          <tr><td>Job security</td><td>Layoffs when global tech slowdown (2022-23: 2 lakh IT layoffs in India)</td><td><strong>Food always needed = permanent demand = permanent jobs</strong></td></tr>
+          <tr><td>Who benefits</td><td>Top 5% educated workers</td><td>All skill levels — farm workers, technicians, managers, engineers</td></tr>
+          <tr><td>What happens in recession</td><td>First jobs cut — IT is discretionary for companies</td><td>Agriculture is essential — food demand never drops in recession</td></tr>
+          <tr><td>Ownership</td><td>Employee with no asset ownership</td><td>Cooperative member = owns share of farm, processing unit, brand</td></tr>
+          <tr><td>Rural reach</td><td>Zero direct benefit to villages</td><td>100% in villages and district towns</td></tr>
+          <tr class="ntk-row"><td><strong>NTK's point</strong></td><td colspan="2">Technology companies can lay off 2 lakh engineers in one year. But food demand does not get laid off. Agriculture remains one of the most durable employment sectors in history. Tamil Nadu should invest in it the way global investors and high-performing agriculture economies invest: technology, professional management, storage, processing, and scale.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="insight">
+      <div class="insight-label">KEY INSIGHT — AGRICULTURE AS INVESTMENT</div>
+      <p>The strategic lesson is bigger than one person: when global investors and agriculture-focused countries keep allocating capital to farming systems, they are signalling that food, land, and value chains are long-term wealth builders. This aligns with NTK's argument for Tamil Nadu: instead of relying only on externally mobile sectors, build district-level agricultural revenue systems across Tamil Nadu's 30+ lakh acres potential with cooperatives, storage, processing, branding, and export-ready value addition. That creates resilient jobs across all skill levels and keeps wealth circulating locally.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================
+     SECTION E: NTK'S COMPLETE MANIFESTO — ALL SECTORS
+     ==================================================== -->
+<div class="sec ntk-section" id="se">
+  <div class="sec-head">
+    <div class="sec-label">SECTION E — NTK COMPLETE MANIFESTO</div>
+    <div class="sec-title">📜 NTK's Full 2026 Vision — All 49 Promises Explained Simply</div>
+    <div class="sec-subtitle">What NTK actually says in their 462-page manifesto — in plain Tamil people's language</div>
+  </div>
+  <div class="sec-body">
+
+    <h3>1. AGRICULTURE — Farming as a Government-Protected Profession</h3>
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">🌾 What NTK Says</div>
+      <ul>
+        <li><strong>Declare farming a "National Occupation"</strong> — same status as government service. Farmer income = stable, protected, dignified</li>
+        <li>Government sets guaranteed income for farmers based on cost of production — no farmer should earn less than production cost</li>
+        <li>Cold storage in EVERY district — protects farmers from price crash at harvest time</li>
+        <li>Natural farming (organic) as mainstream — <em>no poison in Tamil Nadu's food</em></li>
+        <li>Cooperative processing — farmer grows, farmer processes, farmer sells branded product — farmer keeps full value chain</li>
+        <li>Technology in agriculture: drone crop monitoring, AI weather advisory, precision irrigation — government provides to cooperatives free</li>
+        <li><strong>Dairy economy as core agriculture pillar:</strong> village milk collection networks, chilling infrastructure, veterinary support, and cooperative procurement expansion</li>
+        <li>Women-led dairy SHG clusters linked to local feed, fodder, and biogas loops — daily cash flow model for rural households</li>
+        <li>Value-added dairy chain (curd, paneer, ghee, butter, milk powder) at district level so farmers capture processing margins, not only raw milk price</li>
+      </ul>
+      <div class="box box-good" style="margin-top:12px">
+        <strong>Impact:</strong> A farmer growing vegetables today earns ₹5,000/month after middlemen take their share. Under NTK's cooperative crop + dairy model: same household can move toward ₹15,000–25,000/month from crops plus recurring daily dairy cash flow, because value addition and cooperative ownership reduce middlemen leakage.
+      </div>
+    </div>
+
+    <h3>2. WATER — Never Beg Another State Again</h3>
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">💧 What NTK Says</div>
+      <ul>
+        <li>Build new dams on Western Ghats rivers entirely within Tamil Nadu — water stored before it reaches the state boundary</li>
+        <li>Restore all 39,000 ponds, tanks, and lakes using traditional community methods</li>
+        <li>Plant crores of palmyra trees — Tamil Nadu's traditional groundwater recharge system</li>
+        <li>Rainwater harvesting mandatory for all buildings, roads, and public spaces</li>
+        <li>Desalination plants for coastal districts — use sea water for agriculture and drinking</li>
+        <li>Zero water export to other states until Tamil Nadu is 100% water-sufficient</li>
+      </ul>
+    </div>
+
+    <h3>3. ENERGY — Tamil Nadu Powers Itself</h3>
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">⚡ What NTK Says</div>
+      <ul>
+        <li>100% green energy — solar, wind, biogas, small hydro — <strong>no new nuclear, no new coal</strong></li>
+        <li>Government builds biogas plants in every village using agricultural waste — provides cooking gas free or at cost</li>
+        <li>Village-level solar + biogas = villages generate their own power — no TANGEDCO dependency</li>
+        <li>Solar pump sets for every farmer — no power cut affecting irrigation</li>
+        <li>Tamil Nadu becomes energy exporter — excess renewable power sold to neighbouring states = revenue</li>
+        <li>Biogas insulates from international oil/gas price shocks — Russia-Ukraine war: zero impact on TN cooking gas</li>
+      </ul>
+    </div>
+
+    <h3>4. EDUCATION — Genuinely Free, Not Just on Paper</h3>
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">📚 What NTK Says</div>
+      <ul>
+        <li>Free education from LKG to PhD — not just tuition, but hostel, food, and materials too</li>
+        <li>Tamil as medium of instruction including medical and engineering — no language barrier to professional education</li>
+        <li><strong>Politicians' and IAS officers' children MUST study in government schools</strong> — forces quality improvement</li>
+        <li>Quality not just access — government schools to match international standards</li>
+        <li>NEET abolished — Tamil Nadu state decides medical admissions, not central exam</li>
+        <li>Tamil Nadu Agricultural University to lead global agri-tech research</li>
+      </ul>
+    </div>
+
+    <h3>5. HEALTHCARE — Free in Government Hospitals (Not Insurance for Private Hospitals)</h3>
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">🏥 What NTK Says</div>
+      <ul>
+        <li>Free treatment in all government hospitals — not insurance that funds private hospital profits</li>
+        <li>Siddha + Ayurveda integrated into primary healthcare — reduces load on allopathy system</li>
+        <li>Global medical tourism city integrating Tamil traditional medicine + modern medicine — generates foreign exchange that funds free healthcare for TN citizens</li>
+        <li>Dedicated hospital for transgender persons in Trichy</li>
+        <li>Politicians must use government hospitals — forces quality improvement from the top</li>
+        <li>Generic medicines mandatory — all prescriptions must include affordable alternatives</li>
+        <li>No privatisation of government medical colleges</li>
+      </ul>
+    </div>
+
+    <h3>6. WOMEN — Root Cause Approach</h3>
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">♀️ What NTK Says</div>
+      <ul>
+        <li><strong>TASMAC ban = removes primary cause of domestic violence and sexual assault</strong></li>
+        <li>50% women candidates in Assembly and Parliament (constitutional amendment demand)</li>
+        <li>50% government jobs for women — not just reservation, but active placement</li>
+        <li>Death penalty for sexual offenders — after proper trial and conviction</li>
+        <li>Fast-track courts for crimes against women — 90-day judgment mandate</li>
+        <li>Women's economic independence through cooperative employment</li>
+        <li>Menstrual health as part of free government healthcare</li>
+      </ul>
+    </div>
+
+    <h3>7. GOVERNANCE — Against Corruption Structurally</h3>
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">🏛️ What NTK Says</div>
+      <ul>
+        <li><strong>Five capitals</strong> — Chennai (Technology), Coimbatore (Industrial), Madurai (Cultural), Trichy (Administrative), Kanyakumari (Philosophical) — forces investment to all regions</li>
+        <li>Ballot paper over EVMs — transparent, paper-trail elections</li>
+        <li>Mandatory voting — every citizen's vote counts</li>
+        <li>Electoral bond ban — no corporate money in elections (NTK supports Supreme Court's stance)</li>
+        <li>Political funding fully transparent — public audit of all party finances</li>
+        <li>75% GST retention — Tamil Nadu keeps 75% of taxes collected here</li>
+        <li>State-run railway — Tamil Nadu to have its own rail connectivity decisions</li>
+        <li>Supreme Court bench in Chennai — no Tamil litigant should travel to Delhi for justice</li>
+        <li>All court documents available in Tamil</li>
+        <li>Direct election of President of India by the people</li>
+        <li>New Tamil Nadu state emblem featuring Thiruvalluvar — Tamil cultural pride</li>
+      </ul>
+    </div>
+
+    <h3>8. ENVIRONMENT &amp; ECOLOGY — The Party That Protects Tamil Nadu's Future</h3>
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">🌳 What NTK Says</div>
+      <ul>
+        <li>Western Ghats as protected zone — no new quarrying near water bodies</li>
+        <li>Stop raw stone export — process within Tamil Nadu (10× more revenue)</li>
+        <li>Soil conservation program — Tamil Nadu is losing topsoil at alarming rate</li>
+        <li>Restore forest cover — watershed protection for rivers</li>
+        <li>Zero waste industrial model — waste from one industry = raw material for another</li>
+        <li>Citizens rewarded for waste segregation (South Korean model)</li>
+        <li>Strict climate action — TN has specific climate targets</li>
+        <li>Cauvery delta permanently protected as agricultural zone — no hydrocarbon/methane projects</li>
+        <li>Clean rivers — stop all industrial effluent into rivers</li>
+      </ul>
+    </div>
+
+    <h3>9. ECONOMY — Tamil People Own Tamil Nadu's Economy</h3>
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">💰 What NTK Says</div>
+      <ul>
+        <li>Self-reliant economy using <em>local resources for local needs</em> — reduce import dependency</li>
+        <li>Private sector reservation: companies must hire Tamil people first (<em>Aadhi Tamizhar</em> — original Tamil people) — penalties for non-compliance</li>
+        <li>Zero-waste industrial model — every industry's waste becomes another's resource</li>
+        <li>Cooperative ownership — workers own enterprises, not just work in them</li>
+        <li>No corporate ownership of agricultural land — land stays with farmers</li>
+        <li>Technology in traditional industries — not replacing traditional workers but making them more productive</li>
+      </ul>
+    </div>
+
+    <h3>10. TOURISM — Tamil Heritage = Global Revenue</h3>
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">🏛️ What NTK Says</div>
+      <ul>
+        <li>Madurai as Cultural Capital = dedicated heritage tourism infrastructure</li>
+        <li>Revitalise historical sites — archaeological sites, Sangam literature locations, classical arts centres</li>
+        <li>Tamil diaspora tourism — 32 million Tamil speakers globally = natural tourism base</li>
+        <li>Medical tourism integrating Siddha/Ayurveda with modern medicine</li>
+        <li>Kanyakumari as Philosophical Capital = spiritual tourism anchor</li>
+        <li>Revenue from tourism funds free healthcare and education for TN citizens</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================
+     SECTION F: NTK IS PRO-TECH, NOT ANTI-TECH
+     ==================================================== -->
+<div class="sec ntk-section" id="sf">
+  <div class="sec-head">
+    <div class="sec-label">SECTION F — CLEARING A MISCONCEPTION</div>
+    <div class="sec-title">💻 NTK Is NOT Anti-Technology — They Want Tech FOR Everyone, Not Just Engineers</div>
+    <div class="sec-subtitle">The difference between technology that serves 5% and technology that serves 100%</div>
+  </div>
+  <div class="sec-body">
+
+    <div class="box box-ntk">
+      <strong>The Misconception:</strong> Media portrays NTK as "anti-technology" because they oppose certain FDI projects and corporate land acquisition. This is wrong. NTK is anti-technology-that-excludes-people. They are completely pro-technology-that-includes-everyone.
+    </div>
+
+    <h3>Technology NTK Actively Wants in Tamil Nadu</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Technology</th><th>NTK Position</th><th>Jobs It Creates</th><th>Who Benefits</th></tr></thead>
+        <tbody>
+          <tr class="ntk-row"><td>Drone crop monitoring and pesticide spraying</td><td>✅ Fully supports — Government provides drones to cooperatives</td><td>Drone pilots (ITI graduates), maintenance workers, data analysts</td><td>All farmers + educated youth in every district</td></tr>
+          <tr class="ntk-row"><td>AI weather and crop advisory for farmers</td><td>✅ Supports — Tamil language AI advisory for farmers via mobile</td><td>AI developers, local language content workers, agri-extension officers</td><td>Every farmer regardless of education level</td></tr>
+          <tr class="ntk-row"><td>Precision irrigation (sensor + IoT based)</td><td>✅ Supports — reduces water use 40%; critical for water-stressed TN</td><td>Sensor installation workers, maintenance teams, monitoring officers</td><td>All farmers + environment (less water waste)</td></tr>
+          <tr class="ntk-row"><td>Biogas technology (high-tech plants)</td><td>✅ Core NTK proposal — government builds high-tech biogas plants</td><td>Plant operators, maintenance engineers, waste collection workers</td><td>All rural households + farmers</td></tr>
+          <tr class="ntk-row"><td>Solar panel installation + smart grid</td><td>✅ Fully supports — decentralised renewable energy</td><td>Solar technicians, grid engineers, smart-meter readers</td><td>All households + businesses</td></tr>
+          <tr class="ntk-row"><td>Food processing technology</td><td>✅ Supports — modern food processing in cooperatives</td><td>Food technologists, packaging workers, quality testers, logistics</td><td>Farmers + unskilled workers + graduates</td></tr>
+          <tr class="ntk-row"><td>Cold chain and storage technology</td><td>✅ Supports — district-level cold storage in every district</td><td>Cold storage managers, logistics workers, quality monitoring staff</td><td>Farmers + consumers (less food waste = lower prices)</td></tr>
+          <tr><td>IT/GCC for global corporations (DMK model)</td><td>⚠️ Accepts but with conditions — must not displace agriculture; must not require farmland acquisition; must hire Tamil people first</td><td>Primarily engineers only — high education requirement</td><td>Top 5% educated workers in Chennai belt only</td></tr>
+          <tr><td>Foreign corporate land acquisition for tech parks</td><td>❌ Opposes — Parandur airport, Vedanta chip factory on agricultural land</td><td>Construction jobs (temporary) + tech jobs for few</td><td>Corporations profit; farmers lose land permanently</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The Key Difference: Technology That Includes vs Technology That Excludes</h3>
+    <div class="vs-row">
+      <div class="vs-a">
+        <div class="vs-label vs-ntk-label">🔴 NTK: Technology FOR Everyone</div>
+        <div class="vs-content">
+          Drone in agriculture → ITI graduate gets job as drone pilot<br>
+          AI crop advisory → farmer with no education gets weather alert in Tamil<br>
+          Biogas plant → school dropout operates the digester<br>
+          Cold storage → graduate manages cooperative accounts<br>
+          Solar panel installation → 10th pass technician gets skilled job<br><br>
+          <strong>Result: 10 lakh jobs across ALL skill levels in ALL districts</strong>
+        </div>
+      </div>
+      <div class="vs-b">
+        <div class="vs-label vs-other-label">DMK: Technology FOR Some</div>
+        <div class="vs-content">
+          GCC park opens in Chennai → engineer with CS degree gets job<br>
+          Semiconductor factory in Hosur → foreign-trained specialists hired<br>
+          EV assembly plant → some production line workers<br><br>
+          Rural farmer in Sivaganga: zero direct benefit<br>
+          Fisherman in Ramanathapuram: zero direct benefit<br>
+          ITI graduate in Tirunelveli: zero direct benefit<br><br>
+          <strong>Result: Jobs for top 5%; 95% of TN unchanged</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="insight">
+      <div class="insight-label">KEY INSIGHT — NTK AND TECHNOLOGY</div>
+      <p>NTK's vision is not "no technology" — it is "technology that reaches every village, every farmer, every uneducated worker." When NTK says bring technology into agriculture, they mean: give a drone to the farmer's cooperative so the farmer's son who completed ITI can pilot it and earn ₹25,000/month — while the farmer's crop gets monitored without chemical overuse. Give an AI weather app in Tamil to every farmer. Build a biogas plant where the school-dropout in the village earns ₹15,000/month as plant operator. This is INCLUSIVE technology — and it is actually more economically transformative than a GCC park in Chennai that employs 500 engineers while 50 lakh villagers see no benefit.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================
+     SECTION G: FREEBIES = DEBT BOMBS — SIMPLE EXPLANATION
+     ==================================================== -->
+<div class="sec" id="sg">
+  <div class="sec-head">
+    <div class="sec-label">SECTION G — FOR EVERY VOTER</div>
+    <div class="sec-title">🧨 Election Freebies = Debt Bombs Your Children Will Defuse</div>
+    <div class="sec-subtitle">In plain language: why the free fridge is not actually free</div>
+  </div>
+  <div class="sec-body">
+
+    <div class="box box-bad">
+      <strong>Simple Truth:</strong> When a government promises something "free," it is not free. Either:<br>
+      (a) They cut spending on hospitals, schools, and roads to fund it, OR<br>
+      (b) They borrow money — and you, your children, and their children repay it with interest.<br><br>
+      There is no magic. Everything the government gives free was paid for by someone.
+    </div>
+
+    <h3 class="general">What Three Types of "Free" Really Mean</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Type of Free</th><th>Example</th><th>Who Really Pays?</th><th>Do You Get Value Back?</th></tr></thead>
+        <tbody>
+          <tr style="background:#f0fdf4">
+            <td><strong>✅ Investment Free</strong><br><em>(Good - pay back)</em></td>
+            <td>Free school education; free government hospital; free drinking water</td>
+            <td>Current taxpayers pay → your child gets educated → earns more → pays more taxes → SYSTEM SELF-SUSTAINS</td>
+            <td>Yes — compounding returns over 30 years. Society gets smarter, healthier, richer.</td></tr>
+          <tr style="background:#fef3c7">
+            <td><strong>⚠️ Safety Net Free</strong><br><em>(Okay - targeted)</em></td>
+            <td>Pension for elderly widow; PDS rice for BPL family; fishing ban relief</td>
+            <td>All taxpayers share the cost; targeted at genuine vulnerability</td>
+            <td>Mostly yes — prevents people from falling below dignity line. Society is more stable.</td></tr>
+          <tr style="background:#fff1f2">
+            <td><strong>❌ Election Free</strong><br><em>(Bad - pure debt)</em></td>
+            <td>Free refrigerator; ₹10,000 cash to everyone; annual Deepavali sarees</td>
+            <td>Your children pay — government borrows money now; future generations repay with 7–8% interest per year</td>
+            <td>No — you enjoy the fridge for 8 years; your child pays ₹15,000 in taxes (₹8,000 fridge + 7 years interest) for it</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="general">The Refrigerator in Plain Numbers</h3>
+    <div class="box box-warn">
+      <strong>AIADMK promises free refrigerator to 2.1 crore rice card families.</strong><br><br>
+      Cost: ₹8,000 per fridge × 2.1 crore = <strong>₹16,800 crore</strong><br>
+      Tamil Nadu borrows this at 7.5% interest per year.<br>
+      After 10 years of interest: total repayment = <strong>₹33,000+ crore</strong><br><br>
+      Your child gets a 10-year-old, broken refrigerator's debt.<br>
+      The fridge lasts 8 years. The debt lasts 20.<br><br>
+      <strong>Same ₹16,800 crore could alternatively fund:</strong><br>
+      → Free healthcare for 5 crore TN citizens for 1 full year, OR<br>
+      → Cold storage infrastructure in all 38 districts (doubles farmer income permanently), OR<br>
+      → 1.12 lakh scholarship students through 4-year engineering degree<br><br>
+      Which would you choose for Tamil Nadu?
+    </div>
+
+    <h3 class="general">The Score: Which Party Gives Real Value vs Electoral Gifts?</h3>
+    <div class="score-section">
+      <div class="score-row">
+        <div class="score-label">Real Human Value (NTK)</div>
+        <div class="score-track"><div class="score-fill" style="width:90%;background:var(--ntk)">Education+Health+Water+Ecology</div></div>
+        <div class="score-val">9/10</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">Real Human Value (TVK)</div>
+        <div class="score-track"><div class="score-fill" style="width:70%;background:var(--tvk);color:#1a1a1a">Education loan+Safety+Youth</div></div>
+        <div class="score-val">7/10</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">Real Human Value (DMK)</div>
+        <div class="score-track"><div class="score-fill" style="width:65%;background:var(--dmk)">GCC jobs+Free bus+Health</div></div>
+        <div class="score-val">6.5/10</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">Real Human Value (AIADMK)</div>
+        <div class="score-track"><div class="score-fill" style="width:35%;background:var(--aiadmk)">Agriculture+Water good</div></div>
+        <div class="score-val">3.5/10</div>
+      </div>
+      <div style="height:16px"></div>
+      <div class="score-row">
+        <div class="score-label">Electoral Debt Risk (NTK)</div>
+        <div class="score-track"><div class="score-fill" style="width:10%;background:#16a34a">Lowest</div></div>
+        <div class="score-val">1/10</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">Electoral Debt Risk (TVK)</div>
+        <div class="score-track"><div class="score-fill" style="width:50%;background:var(--tvk);color:#1a1a1a">₹2,500/mo cash gap</div></div>
+        <div class="score-val">5/10</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">Electoral Debt Risk (DMK)</div>
+        <div class="score-track"><div class="score-fill" style="width:45%;background:var(--dmk)">Growing debt trend</div></div>
+        <div class="score-val">4.5/10</div>
+      </div>
+      <div class="score-row">
+        <div class="score-label">Electoral Debt Risk (AIADMK)</div>
+        <div class="score-track"><div class="score-fill" style="width:95%;background:var(--bad)">₹50-70K Cr new promises</div></div>
+        <div class="score-val">9.5/10</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================
+     SECTION G CONTINUED: FREEBIE COMPARISON (ALL PARTIES)
+     ==================================================== -->
+<div class="sec ntk-section" id="sgx">
+  <div class="sec-head">
+    <div class="sec-label">SECTION G — FOR EVERY VOTER (CONTINUED)</div>
+    <div class="sec-title">📊 Complete Freebie Comparison — All Major Party Promises</div>
+    <div class="sec-subtitle">Internet-checked highlights from official/primary report sources + deep-analysis structure</div>
+  </div>
+  <div class="sec-body">
+
+    <div class="box box-ntk">
+      <strong>Why this section matters:</strong> This adds hard fiscal and sector numbers that reinforce NTK's structural argument: stop debt-heavy consumption politics, fix power economics, and move to productive investment that compounds over time.
+    </div>
+
+    <div class="stats">
+      <div class="stat ntk-stat">
+        <div class="big">₹69,114 Cr</div>
+        <div class="sm">TN INTEREST PAYMENT IN FY26</div>
+        <div class="src">From Deep Analysis v3 data block · indicates debt pressure before new promises</div>
+      </div>
+      <div class="stat ntk-stat">
+        <div class="big">₹10.71 L Cr</div>
+        <div class="sm">PROJECTED TN DEBT BY FY27</div>
+        <div class="src">Added to show why NTK's low-debt promise architecture is central</div>
+      </div>
+      <div class="stat ntk-stat">
+        <div class="big">₹1,62,507 Cr</div>
+        <div class="sm">TANGEDCO ACCUMULATED LOSS</div>
+        <div class="src">ICRA-linked figure used in v3 · supports NTK decentralised power thesis</div>
+      </div>
+    </div>
+
+    <h3>Freebie Category Framework (A/B/C) — Applied to All Parties</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Category</th><th>Definition</th><th>Fiscal Behaviour</th><th>People Outcome</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Category A — Human Capital</strong></td><td>Education, healthcare, nutrition, productivity-linked support</td><td>Costs now, pays back through capability and tax-base growth</td><td><span class="tag t-good">Best long-term welfare</span></td></tr>
+          <tr><td><strong>Category B — Protective Safety Net</strong></td><td>Targeted support for vulnerable groups</td><td>Recurring cost, justified when targeted</td><td><span class="tag t-warn">Useful with means-testing</span></td></tr>
+          <tr><td><strong>Category C — Electoral Consumption</strong></td><td>Universal consumer giveaways with weak productivity return</td><td>Debt-heavy when unfunded</td><td><span class="tag t-bad">Short-term relief, weak long-term gain</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Freebie Comparison Table — No Party Ignored</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Party</th><th>Promise</th><th>Type</th><th>Who Gets It</th><th>Base Annual Cost (₹ Cr)</th><th>Net People Verdict</th></tr></thead>
+        <tbody>
+          <tr><td><strong>AIADMK</strong></td><td>₹10,000 special assistance per family</td><td><span class="tag t-bad">Category C</span></td><td>All families</td><td>4,400 <span class="tag t-grey">one-time annualized over 5Y</span></td><td>Immediate relief; high one-time fiscal load</td></tr>
+          <tr><td><strong>AIADMK</strong></td><td>Kula Vilakku ₹2,000/month</td><td><span class="tag t-warn">Category B</span></td><td>All family card households via women head</td><td>14,400</td><td>Useful support; targeting quality decides efficiency</td></tr>
+          <tr><td><strong>AIADMK</strong></td><td>Free bus travel for men (city buses) + women scheme continues</td><td><span class="tag t-bad">Category C/B mix</span></td><td>Urban bus riders</td><td>6,500</td><td>Higher fiscal burden unless funded with transit reform</td></tr>
+          <tr><td><strong>AIADMK</strong></td><td>3 free LPG cylinders/year</td><td><span class="tag t-warn">Category B</span></td><td>Rice-card families</td><td>1,750</td><td>Moderate household benefit; recurring subsidy</td></tr>
+          <tr><td><strong>AIADMK</strong></td><td>Pongal gift hamper + ₹1,000 cash</td><td><span class="tag t-bad">Category C</span></td><td>Family-card holders</td><td>2,200</td><td>Seasonal relief; weak productivity return</td></tr>
+          <tr><td><strong>AIADMK</strong></td><td>Annual free Deepavali saree/dhoti</td><td><span class="tag t-bad">Category C</span></td><td>Family-card holders</td><td>1,200</td><td>Symbolic welfare; debt-heavy if expanded</td></tr>
+          <tr><td><strong>AIADMK</strong></td><td>Free refrigerator for rice-card households</td><td><span class="tag t-bad">Category C</span></td><td>Rice-card households</td><td>1,300 <span class="tag t-grey">one-time annualized over 5Y</span></td><td>High capital outlay; strongest debt-risk freebie</td></tr>
+          <tr><td><strong>AIADMK</strong></td><td>Thalikku Thangam continuation + marriage assistance + free silk saree/dhoti-shirt</td><td><span class="tag t-warn">Category B/C mix</span></td><td>Poor/eligible women under marriage assistance scheme</td><td>2,500 <span class="tag t-grey">modeled</span></td><td>Socially popular; needs strict targeting + fiscal caps</td></tr>
+          <tr><td><strong>AIADMK</strong></td><td>Free concrete housing (Amma Illam)</td><td><span class="tag t-good">Category A/B</span></td><td>Homeless poor families</td><td>5,000 <span class="tag t-grey">modeled</span></td><td>High social value if allocation is transparent</td></tr>
+          <tr><td><strong>AIADMK</strong></td><td>Free dal + cooking oil with free rice</td><td><span class="tag t-warn">Category B</span></td><td>Family-card holders</td><td>3,000 <span class="tag t-grey">modeled</span></td><td>Food-security support; recurring subsidy load</td></tr>
+          <tr><td><strong>AIADMK</strong></td><td>Free sewing machines (eligible women after training)</td><td><span class="tag t-good">Category A/B</span></td><td>Eligible women beneficiaries</td><td>500 <span class="tag t-grey">modeled</span></td><td>Better than pure consumption freebies when linked to livelihood</td></tr>
+          <tr><td><strong>TVK</strong></td><td>₹2,500/month women assistance</td><td><span class="tag t-warn">Category B</span></td><td>Women (as announced in manifesto coverage)</td><td>20,000 <span class="tag t-grey">modeled midpoint</span></td><td>Direct relief; requires clear funding source</td></tr>
+          <tr><td><strong>TVK</strong></td><td>8 gram gold for marriage assistance</td><td><span class="tag t-warn">Category B/C mix</span></td><td>Eligible brides</td><td>3,800 <span class="tag t-grey">modeled</span></td><td>Politically strong; fiscal and eligibility design critical</td></tr>
+          <tr><td><strong>TVK</strong></td><td>Thaai Maaman Seer / gold ring for newborn girls (modeled at 4g each for costing example)</td><td><span class="tag t-warn">Category B/C mix</span></td><td>Newborn girls (if universal)</td><td>4,004 <span class="tag t-grey">4g × ₹14,300 × 7L births</span></td><td>Large recurring fiscal load if universal</td></tr>
+          <tr><td><strong>TVK</strong></td><td>Quality silk saree with marriage assistance</td><td><span class="tag t-bad">Category C</span></td><td>Eligible brides</td><td>450 <span class="tag t-grey">modeled</span></td><td>Low productivity return unless tightly targeted</td></tr>
+          <tr><td><strong>TVK</strong></td><td>Interest-free loans up to ₹5 lakh for women SHGs</td><td><span class="tag t-warn">Category B</span></td><td>Women-led SHGs</td><td>1,200 <span class="tag t-grey">interest/subvention modeled</span></td><td>Can be high-impact if repayment and enterprise support are strong</td></tr>
+          <tr><td><strong>TVK</strong></td><td>₹15,000 annual support for mothers (dropout prevention)</td><td><span class="tag t-good">Category A/B</span></td><td>Mothers/households linked to children education retention</td><td>7,500 <span class="tag t-grey">modeled</span></td><td>Positive if tied to attendance and continuation in school</td></tr>
+          <tr><td><strong>TVK</strong></td><td>6 free LPG cylinders/year per family</td><td><span class="tag t-warn">Category B</span></td><td>Households</td><td>3,500</td><td>Cost-of-living relief; recurring subsidy pressure</td></tr>
+          <tr><td><strong>TVK</strong></td><td>200 units free power</td><td><span class="tag t-bad">Category C risk</span></td><td>Domestic electricity users</td><td>13,000</td><td>Large utility-fiscal transfer risk if universal</td></tr>
+          <tr><td><strong>TVK</strong></td><td>₹4,000/month aid for unemployed graduates</td><td><span class="tag t-warn">Category B</span></td><td>Unemployed graduates</td><td>4,000 <span class="tag t-grey">modeled</span></td><td>Short-term cushion; best with employment linkage</td></tr>
+          <tr><td><strong>TVK</strong></td><td>₹3,000 pension for elderly and differently-abled</td><td><span class="tag t-good">Category B</span></td><td>Elderly and differently-abled</td><td>6,000 <span class="tag t-grey">modeled</span></td><td>Higher welfare value with targeting and delivery integrity</td></tr>
+          <tr><td><strong>DMK</strong></td><td>Magalir Urimai proposed increase to ₹2,000/month (2026 manifesto release)</td><td><span class="tag t-warn">Category B</span></td><td>Women beneficiaries</td><td>26,000 <span class="tag t-grey">modeled from current program base</span></td><td>High direct support; doubles recurring fiscal burden vs current ₹1,000 level</td></tr>
+          <tr><td><strong>DMK</strong></td><td>Illathu Arasi ₹8,000 appliance coupon</td><td><span class="tag t-bad">Category C/B mix</span></td><td>Eligible non-income-tax women households</td><td>8,000 <span class="tag t-grey">one-time annualized over 5Y</span></td><td>Politically attractive; weaker productivity return than health/education spending</td></tr>
+          <tr><td><strong>DMK</strong></td><td>35 lakh free laptops</td><td><span class="tag t-good">Category A</span></td><td>Students/youth cohorts</td><td>1,750 <span class="tag t-grey">one-time annualized over 5Y</span></td><td>Can be high-return if tied to education quality + skill outcomes</td></tr>
+          <tr><td><strong>DMK</strong></td><td>Collateral-free SHG loans up to ₹5 lakh</td><td><span class="tag t-warn">Category B</span></td><td>Women SHGs</td><td>1,500 <span class="tag t-grey">interest/subvention modeled</span></td><td>Useful for enterprise if repayment and market linkage are strong</td></tr>
+          <tr><td><strong>DMK</strong></td><td>Women free bus travel</td><td><span class="tag t-good">Category A/B</span></td><td>Women commuters</td><td>4,500</td><td>Strong mobility return; requires sustained transport funding</td></tr>
+          <tr class="ntk-row"><td><strong>NTK</strong></td><td>TASMAC prohibition + structural cooperative welfare model</td><td><span class="tag t-ntk">Category A-tilted</span></td><td>Statewide household and social outcomes</td><td>8,000 <span class="tag t-grey">transition/implementation burden modeled</span></td><td>Lower cash-freebie profile; higher long-term structural return</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="src-note">Costing method used: annual recurring schemes taken as annual burden; one-time schemes annualized over 5 years; loan schemes treated as interest/subvention burden, not full principal outlay; selected rows marked "modeled" where official beneficiary counts are not published in a single auditable source.</div>
+    <div class="src-note">Internet-checked promise inputs: AIADMK official manifesto 2026 PDF; TVK manifesto coverage with PTI inputs; DMK manifesto-release coverage with ANI inputs. Newborn 4g ring is included as a scenario input and shown explicitly in formula section.</div>
+
+    <div class="insight general">
+      <div class="insight-label">FREEBIE COMPARISON BOTTOM LINE</div>
+      <p>People need support, but policy quality depends on design. Targeted mobility, health, and education support tends to compound. Broad unfunded consumer giveaways tend to transfer today's political benefit into tomorrow's debt. This table keeps all parties in view while making that distinction explicit.</p>
+    </div>
+
+    <h3>5-Year Debt Projection Model from Freebie Burden (By Party)</h3>
+    <div class="box box-warn">
+      <strong>Model assumptions (transparent):</strong> Baseline TN debt used: ₹9.30 lakh Cr. Interest rate assumed: 7.5% annual. Freebie burden values below are modeled annual unfunded pressure (from this report's compiled promises, using conservative midpoints). This is a scenario model, not a final CAG/TNERC audited outcome.
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Core Inputs Used in This Costing Sheet</th><th>Value Used</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Rice-card families (major universal household schemes)</td><td>2.1 crore</td><td>Consistent with existing refrigerator/rice-card scale references in this report</td></tr>
+          <tr><td>Women-beneficiary base for large monthly aid schemes</td><td>1.1 to 1.3 crore (scheme-dependent)</td><td>Range used to avoid overstating fiscal burden where eligibility is unclear</td></tr>
+          <tr><td>Births per year (newborn-gold scenario)</td><td>7 lakh (scenario input)</td><td>User-requested stress case; conservative high-coverage scenario</td></tr>
+          <tr><td>Gold price used</td><td>₹14,300/g (22K)</td><td>Chennai retail range reference, April 2026 period</td></tr>
+          <tr><td>Interest rate for debt carry</td><td>7.5% annual</td><td>Scenario standard for medium-term state borrowing stress projection</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>How Burden Is Calculated</th><th>Formula</th><th>Scenario Inputs Used Here</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cash transfer schemes</strong></td><td>Amount × frequency × beneficiary count</td><td>Example: monthly aid × 12 × beneficiaries</td></tr>
+          <tr><td><strong>Gold-linked schemes</strong></td><td>Gold grams × gold price per gram × beneficiaries</td><td>Gold price used for scenario: ₹14,300/g (22K Chennai market reference, April 2026)</td></tr>
+          <tr><td><strong>Newborn gold example</strong></td><td>4g × ₹14,300 × 7,00,000 births</td><td>= ₹40,040,000,000 ≈ <strong>₹4,004 Cr/year</strong></td></tr>
+          <tr><td><strong>Party annual burden total</strong></td><td>Sum of all Base Annual Cost rows for that party</td><td>DMK = 41,750; AIADMK = 42,750; TVK = 63,454; NTK = 8,000</td></tr>
+          <tr><td><strong>5-year added principal</strong></td><td>Annual unfunded burden × 5</td><td>If annual burden is ₹63,454 Cr, 5Y principal = ₹3,17,270 Cr</td></tr>
+          <tr><td><strong>5-year cumulative interest</strong></td><td>Annual burden × 7.5% × (5+4+3+2+1)</td><td>Multiplier = 1.125 of annual burden</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Party</th><th>Modeled Annual Unfunded Freebie Burden (₹ Cr)</th><th>5-Year Added Principal (₹ Cr)</th><th>5-Year Cumulative Interest Paid (₹ Cr)</th><th>Debt Stock After 5 Years (₹ Lakh Cr, baseline + added principal)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>DMK</strong></td><td>41,750</td><td>2,08,750</td><td>46,969</td><td>11.39</td></tr>
+          <tr><td><strong>AIADMK</strong></td><td>42,750</td><td>2,13,750</td><td>48,094</td><td>11.44</td></tr>
+          <tr><td><strong>TVK</strong></td><td>63,454 <span class="tag t-warn">includes 4g × 7L newborn scenario</span></td><td>3,17,270</td><td>71,386</td><td>12.47</td></tr>
+          <tr class="ntk-row"><td><strong>NTK</strong></td><td>8,000</td><td>40,000</td><td>9,000</td><td>9.70</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="src-note">Formula used: Added principal (5Y) = annual burden × 5. Cumulative 5Y interest (cash outgo) = annual burden × 7.5% × (5+4+3+2+1) = annual burden × 1.125. Birth-count assumption for newborn-gold example: 7 lakh births/year scenario input.</div>
+
+    <h3>Comprehensive Sector Impact Matrix (Data Transfer from Deep Analysis)</h3>
+    <div class="tw">
+      <table>
+        <thead>
+          <tr><th>Sector</th><th>Current Problem (Data)</th><th>DMK</th><th>AIADMK</th><th>NTK</th><th>TVK</th><th>Net People Verdict</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>TANGEDCO / Power</strong></td><td>₹1.62L Cr accumulated loss; annual loss around ₹6,900 Cr; subsidy stress</td><td>Trifurcation + solar push; partial operational gain</td><td>Rooftop/solar support; no full utility restructuring plan</td><td>Decentralised solar-wind-biogas + farm solar pumps; cost-side reform</td><td>200 free units headline; funding gap risk</td><td><span class="tag t-good">NTK long-term</span> · <span class="tag t-warn">DMK medium-term</span></td></tr>
+          <tr><td><strong>Transport / TNSTC</strong></td><td>Aging fleet + chronic losses; free-travel burden without deep reform</td><td>Women free-bus implemented; metro expansion</td><td>Adds free-travel promises with weak funding clarity</td><td>Public-good framing; limited detailed TNSTC financial blueprint</td><td>Expanded free-travel promise; cost pressure risk</td><td><span class="tag t-warn">DMK currently strongest on delivered execution</span></td></tr>
+          <tr><td><strong>Roads &amp; Highways</strong></td><td>High accident burden; toll + tax burden debate</td><td>Project delivery continues; no toll-reset policy</td><td>More road infra promises; no toll-structure correction</td><td>Toll double-tax argument + decentralised capital logic</td><td>Some quality language; no toll framework</td><td><span class="tag t-ntk">NTK strongest on principle</span> · implementation needs revenue ring-fence</td></tr>
+          <tr><td><strong>Agriculture</strong></td><td>Middlemen capture + water stress + input-cost squeeze</td><td>MSP demand + incremental support</td><td>Most detailed immediate farm policy stack</td><td>Cooperative ownership from seed-to-sale + agri-tech + water restoration</td><td>Supportive promises, less structural redesign</td><td><span class="tag t-ntk">NTK structural win</span> + <span class="tag t-aiadmk">AIADMK detail strength</span></td></tr>
+          <tr><td><strong>Tourism</strong></td><td>Low value capture vs civilisational potential</td><td>Corridor approach, incremental development</td><td>Specific coastal and tourism assets proposed</td><td>Cultural-capital strategy (Madurai model + Tamil heritage export)</td><td>Limited visible depth in this file context</td><td><span class="tag t-warn">AIADMK immediate detail</span> · <span class="tag t-ntk">NTK long-term model</span></td></tr>
+          <tr><td><strong>Fisheries</strong></td><td>Coastal risk, diesel cost, price volatility, middlemen</td><td>Welfare continuation + some harbour work</td><td>Strong welfare and safety package</td><td>Cooperative export/value-chain ownership model</td><td>Welfare promises with narrower structural depth</td><td><span class="tag t-ntk">NTK structural</span> · <span class="tag t-aiadmk">AIADMK immediate relief</span></td></tr>
+          <tr><td><strong>Mining / Western Ghats</strong></td><td>High leakages in raw extraction value; ecological damage</td><td>Monitoring, but no deep value-addition reset</td><td>No major quarry-chain structural redesign</td><td>Raw-export stop + in-state processing + ecology protection</td><td>Limited broader mining framework</td><td><span class="tag t-ntk">NTK clear lead</span></td></tr>
+          <tr><td><strong>MSME / Small Industry</strong></td><td>Power cost + credit + compliance stress in 85% informal economy</td><td>Cluster-led growth through larger ecosystem</td><td>Specific MSME supports and district skilling</td><td>Cooperative small-industry ownership in districts</td><td>Immediate credit/safety-net style support</td><td><span class="tag t-warn">TVK immediate cash support</span> · <span class="tag t-ntk">NTK ownership model</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Quantified NTK Structural Policies (High Return, Long Horizon)</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>NTK Policy</th><th>Positive Effect for People</th><th>Data Imported from v3</th></tr></thead>
+        <tbody>
+          <tr class="ntk-row"><td><strong>TASMAC prohibition</strong></td><td>Reduces hidden household drain, domestic violence triggers, and alcohol-linked social cost</td><td>Short-term revenue hit discussed at ₹48,344 Cr/yr, with medium-term recovery via productivity and health savings</td></tr>
+          <tr class="ntk-row"><td><strong>Village biogas economy</strong></td><td>Local gas, rural jobs, lower waste burning, reduced import exposure</td><td>Total biogas potential used in v3: 190 lakh m³/day (including tapioca-processing estimate 101)</td></tr>
+          <tr class="ntk-row"><td><strong>AAVIN cooperative upgrade model</strong></td><td>Higher farmer-side milk realisation and local value capture</td><td>v3 block: farmer realisation movement from ~₹38/L toward ₹52–58/L; potential +₹1,700 Cr farm-income shift</td></tr>
+          <tr class="ntk-row"><td><strong>Five-capital decentralisation</strong></td><td>Spreads investment and government access beyond Chennai concentration</td><td>v3 framing: structural reach to districts currently under-served; transition in 5–10 years</td></tr>
+          <tr class="ntk-row"><td><strong>Politician-family govt school rule</strong></td><td>Forces quality accountability from top leadership without high fiscal outlay</td><td>v3 rated this as a maximum-impact governance reform with near-zero direct fiscal cost</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="insight">
+      <div class="insight-label">WHY THIS BOOSTS NTK NARRATIVE</div>
+      <p>The added numbers make one line clearer: when debt, interest burden, and power-sector losses are already high, a model built on structural productivity wins over headline consumption promises. This is exactly where NTK positions itself: long-horizon capacity building in water, agriculture, decentralised energy, and institutional accountability.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================
+     SECTION H: FOR THE PEOPLE — SIMPLE VERDICT
+     ==================================================== -->
+<div class="sec" id="sh">
+  <div class="sec-head">
+    <div class="sec-label">SECTION H — PEOPLE'S VERDICT</div>
+    <div class="sec-title">👥 If Each Party Wins — What Actually Changes in Your Life?</div>
+    <div class="sec-subtitle">One-page honest comparison for every Tamil Nadu citizen</div>
+  </div>
+  <div class="sec-body">
+
+    <h3 class="general">For a Farmer Family in a Village</h3>
+    <div class="party-grid">
+      <div class="pcard ntk-card">
+        <div class="pcard-head" style="background:var(--ntk)">
+          <a href="https://www.naamtamilar.org/2020/05/ntk-logo-seeman-thalaivar-print-images-download/" target="_blank" rel="noopener noreferrer"><img class="psym" src="https://i0.wp.com/www.naamtamilar.org/wp-content/uploads/2020/05/vivasayi-chinnam-naam-tamilar-katchi-election-symbol-ntk-2025-2.png?resize=696%2C717&amp;ssl=1" alt="NTK symbol" loading="lazy" decoding="async"></a>
+          <div class="pcard-name">NTK Wins</div>
+        </div>
+        <div class="pcard-body">
+          <ul>
+            <li>Farming declared government service — guaranteed income</li>
+            <li>Cooperative chain — you sell processed product, not raw crop</li>
+            <li>Biogas from your paddy straw — extra income + free cooking gas</li>
+            <li>Village has own solar power — no power cuts for pump</li>
+            <li>New dams + tank restoration — reliable water every year</li>
+            <li>No TASMAC — husband's ₹3,000–5,000/month stays in family</li>
+            <li>Cold storage nearby — no more price crash at harvest</li>
+          </ul>
+          <div style="font-weight:700;color:var(--ntk);margin-top:8px">Expected income change: +₹8,000–15,000/month</div>
+        </div>
+      </div>
+      <div class="pcard aiadmk-card">
+        <div class="pcard-head" style="background:var(--aiadmk)">
+          <img class="psym" src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Election_Symbol_Two_Leaves_2.svg" alt="AIADMK symbol" loading="lazy" decoding="async">
+          <div class="pcard-name">AIADMK Wins</div>
+        </div>
+        <div class="pcard-body">
+          <ul>
+            <li>Crop loan waiver — immediate relief</li>
+            <li>MSP ₹3,500 demand — may or may not be delivered</li>
+            <li>Solar pump set — reliable irrigation power</li>
+            <li>₹15,000/hectare input subsidy</li>
+            <li>Free milch cow/goat scheme restarts</li>
+            <li>BUT: debt created by 297 promises may reduce services later</li>
+          </ul>
+          <div style="font-weight:700;color:var(--aiadmk);margin-top:8px">Expected income change: +₹3,000–6,000/month (short-term)</div>
+        </div>
+      </div>
+      <div class="pcard dmk-card">
+        <div class="pcard-head" style="background:var(--dmk)">
+          <img class="psym" src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian_election_symbol_rising_sun.svg" alt="DMK symbol" loading="lazy" decoding="async">
+          <div class="pcard-name">DMK Wins</div>
+        </div>
+        <div class="pcard-body">
+          <ul>
+            <li>Magalir Urimai proposed at ₹2,000/month (manifesto update)</li>
+            <li>Some MSP support</li>
+            <li>Kudimaramathu water body work continues</li>
+            <li>But: TASMAC revenue maintained — alcohol problem continues</li>
+            <li>Farmer income: modest improvement</li>
+          </ul>
+          <div style="font-weight:700;color:var(--dmk);margin-top:8px">Expected income change: +₹2,000–4,000/month</div>
+        </div>
+      </div>
+      <div class="pcard tvk-card">
+        <div class="pcard-head" style="background:var(--tvk)">
+          <img class="psym" src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Election_Symbol_Whistle.png" alt="TVK symbol" loading="lazy" decoding="async">
+          <div class="pcard-name">TVK Wins</div>
+        </div>
+        <div class="pcard-body">
+          <ul>
+            <li>Higher MSP promise for paddy</li>
+            <li>Free higher education for farmer's children</li>
+            <li>₹2,500/month for woman of household</li>
+            <li>Limited agricultural structural reform</li>
+            <li>No cooperative economy plan</li>
+          </ul>
+          <div style="font-weight:700;color:var(--tvk);margin-top:8px">Expected income change: +₹2,500–4,000/month</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="general">For a Young Person (18–25 years) Looking for Work</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>What Changes</th><th style="color:#cc0000">NTK</th><th style="color:#7B3F00">DMK</th><th style="color:#1a6b1a">AIADMK</th><th style="color:#9a7c00">TVK</th></tr></thead>
+        <tbody>
+          <tr><td>Job location</td><td class="ntk-row">In your own district — agri-tech, biogas, cooperative, tourism</td><td>Chennai/Coimbatore — GCC, IT</td><td>Private sector (75% local mandate) + skill centres</td><td>50L job target; internships with ₹10K/month</td></tr>
+          <tr><td>Education support</td><td class="ntk-row">Fully free — no hidden costs, hostel, food included</td><td>Pudhumai Penn ₹1,500; 35L laptops</td><td>₹2,000/month for graduate job seekers; Skill University</td><td>₹20L education loan; ₹4,000/month delay compensation</td></tr>
+          <tr><td>Job ownership</td><td class="ntk-row">You own a share in the cooperative — not just an employee</td><td>Employee in private company</td><td>Employee in private company</td><td>₹25L entrepreneur loan; employee in company</td></tr>
+          <tr><td>Rural vs urban</td><td class="ntk-row">Jobs available everywhere in TN</td><td>Urban-centric primarily</td><td>Some decentralisation (skill complexes per district)</td><td>50L target — location unclear</td></tr>
+          <tr><td><strong>Verdict</strong></td><td class="ntk-row"><strong>Most equitable geographically; you own what you build</strong></td><td>Good for urban engineers</td><td>Best immediate unemployment allowance</td><td>Best individual support packages</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="general">For a Woman (Any Income Level)</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>What Changes</th><th style="color:#cc0000">NTK</th><th style="color:#7B3F00">DMK</th><th style="color:#1a6b1a">AIADMK</th><th style="color:#9a7c00">TVK</th></tr></thead>
+        <tbody>
+          <tr><td>Monthly income</td><td class="ntk-row">No direct cash — but husband stops drinking → ₹3,000–5,000/month stays at home</td><td>₹2,000/month Magalir Urimai (proposed)</td><td>₹2,000/month Kula Vilakku</td><td>₹2,500/month</td></tr>
+          <tr><td>Physical safety</td><td class="ntk-row"><strong>TASMAC ban = removes primary cause of domestic violence</strong></td><td>Fast-track courts, some safety infra</td><td>CCTV, Amma Patrol</td><td>Best safety infrastructure (panic buttons, body cams, courts)</td></tr>
+          <tr><td>Healthcare</td><td class="ntk-row">Free in government hospitals; menstrual health as part of primary care</td><td>CMCHIS extended; Makkalai Thedi Maruthuvam</td><td>₹2L IVF free; Amma Mini Clinics</td><td>₹25L insurance; free checkups</td></tr>
+          <tr><td>Political power</td><td class="ntk-row"><strong>50% assembly seats reserved; 50% government jobs</strong></td><td>40% govt job reservation</td><td>Some women welfare schemes</td><td>33% women candidates target</td></tr>
+          <tr><td><strong>Overall verdict</strong></td><td class="ntk-row"><strong>Most structural — removes cause of suffering + political power</strong></td><td>Good welfare record</td><td>Best cash amount</td><td>Best safety infrastructure</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="insight">
+      <div class="insight-label">PEOPLE'S FINAL VERDICT</div>
+      <p>If you want your household to be richer <em>this month</em> — AIADMK gives the most cash. If you want your family to be safe <em>this year</em> — TVK has the best safety infrastructure. If you want your children's future to be better <em>in 10 years</em> — DMK's industrial economy is the most proven path. If you want Tamil Nadu to be self-reliant, ecologically strong, and equitable <em>in 20 years</em> — NTK has the most coherent long-term vision. The honest truth: most voters choose what helps them this month. NTK asks voters to think about the next decade. That is both NTK's greatest strength and the reason they have not yet won seats. Democracy gives you the choice — immediate comfort or generational transformation.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ====================================================
+     SECTION I: CHARTS
+     ==================================================== -->
+<div class="sec" id="charts">
+  <div class="sec-head">
+    <div class="sec-label">SECTION I</div>
+    <div class="sec-title">📊 Visual Comparisons</div>
+  </div>
+  <div class="sec-body">
+
+    <div class="chart-wrap">
+      <div class="chart-title">Chart 1: NTK Vote Share Growth — 13 Years of Building Without Media Support (ECI Verified)</div>
+      <canvas id="c1" height="180"></canvas>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">Chart 2: Real Human Value vs Electoral Debt Risk by Party</div>
+      <canvas id="c2" height="200"></canvas>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">Chart 3: Water Bodies in Tamil Nadu — 39,000 Available, Most Dead or Encroached</div>
+      <canvas id="c3" height="180"></canvas>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">Chart 4: TN Biogas Potential by Source vs Current LPG Import Need</div>
+      <canvas id="c4" height="180"></canvas>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">Chart 5: Who Benefits from Each Party's Policies — Across Income Groups</div>
+      <canvas id="c5" height="220"></canvas>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">Chart 6: Policy Comparison Radar — 10 Dimensions</div>
+      <canvas id="c6" height="280"></canvas>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">Chart 7: 5-Year Freebie Debt Impact Model — Added Principal vs Interest (₹ Cr)</div>
+      <canvas id="c7" height="220"></canvas>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">Chart 8: NTK Promise Feasibility — Global Proof vs Tamil Nadu Execution Readiness</div>
+      <canvas id="c8" height="320"></canvas>
+      <div class="src-note">Promise-by-promise model: each row maps an NTK promise to countries where similar policy architecture works at scale. Scores show precedent strength vs TN rollout readiness (0-10). These are benchmark parallels, not a claim of automatic 1:1 transfer without Tamil Nadu-specific implementation design.</div>
+      <div class="tw" style="margin-top:10px">
+        <table>
+          <thead><tr><th>NTK Promise (Applied)</th><th>Countries/Models Showing Feasibility</th><th>Why It Matters for TN</th></tr></thead>
+          <tbody>
+            <tr><td>Farmer + dairy cooperative value-chain ownership</td><td>Netherlands (FrieslandCampina), Denmark (Arla), New Zealand (Fonterra), India (AMUL model)</td><td>Farmers capture processing + brand margin in both crops and milk economy</td></tr>
+            <tr><td>Water self-sufficiency via storage/reuse efficiency</td><td>Israel (drip + reuse), Singapore (water reuse model)</td><td>Reduces interstate dependency and drought volatility</td></tr>
+            <tr><td>Village biogas + decentralized renewable mix</td><td>Germany (biogas scale), Denmark (district energy integration)</td><td>Cuts fuel import stress and stabilizes rural energy</td></tr>
+            <tr><td>Strong public education access pipeline</td><td>Finland (school outcomes), Germany (public higher-ed affordability)</td><td>Improves human capital without household debt trap</td></tr>
+            <tr><td>Public-health-first system with traditional integration</td><td>Thailand (UHC delivery), China (traditional + modern integration)</td><td>Expands low-cost coverage and preventive care</td></tr>
+            <tr><td>Women safety via alcohol-harm control architecture</td><td>Sweden/Norway (state-controlled retail + strict restrictions)</td><td>Policy design can reduce harm through supply and access controls</td></tr>
+            <tr><td>Decentralized governance and regional balance</td><td>South Africa (multi-capital structure), Malaysia (admin decongestion)</td><td>Spreads institutions and investment beyond one city core</td></tr>
+            <tr><td>Ecology-first growth and restoration model</td><td>Costa Rica (forest restoration), Rwanda (strict environmental controls)</td><td>Protects long-term water, soil, and climate resilience</td></tr>
+            <tr><td>Local ownership + SME-centered economy</td><td>Germany (Mittelstand), Japan (regional manufacturing ecosystems)</td><td>Keeps value and jobs inside local economy</td></tr>
+            <tr><td>Heritage-led tourism revenue strategy</td><td>Italy (heritage monetization), Cambodia (site-led tourism economy)</td><td>Converts cultural capital into recurring service revenue</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">Chart 9: Dairy Economy Strengthening — Current TN vs NTK Cooperative Path</div>
+      <canvas id="c9" height="260"></canvas>
+      <div class="src-note">Illustrative policy model using cooperative benchmarks (AMUL/Fonterra/Arla style architecture) adapted to TN context.</div>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-title">Chart 10: 5-Year Dairy Revenue Trajectory (Baseline vs Reform Scenario)</div>
+      <canvas id="c10" height="260"></canvas>
+      <div class="src-note">Values are scenario projections to test feasibility of NTK's agriculture+dairy structural model; not a final audited budget outcome.</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ====================================================
+     SECTION J: FINAL SUMMARY IN PLAIN LANGUAGE
+     ==================================================== -->
+<div class="sec" id="sj">
+  <div class="sec-head">
+    <div class="sec-label">FINAL SECTION</div>
+    <div class="sec-title">🗳️ Plain Language Summary: What Every Tamil Nadu Voter Must Know</div>
+  </div>
+  <div class="sec-body">
+
+    <h3 class="general">The 10 Things Every Voter Must Ask Before Voting</h3>
+    <ol style="line-height:2.2;font-size:.95em">
+      <li><strong>Where does the money for this "free" thing come from?</strong> If the candidate cannot answer, the answer is "your children's future."</li>
+      <li><strong>Has this party kept its promises from the last election?</strong> DMK promised prohibition in 2021 — TASMAC revenue doubled instead.</li>
+      <li><strong>Does this policy make me more capable or more dependent?</strong> Free education = capable. Free saree = neither.</li>
+      <li><strong>Will this job still exist in 10 years?</strong> IT jobs: uncertain. Agricultural jobs: permanent — food demand never drops.</li>
+      <li><strong>Who does not benefit from this policy?</strong> GCC/IT benefits engineers. Cooperative farming benefits everyone.</li>
+      <li><strong>Why does media not cover NTK properly?</strong> Because NTK threatens the alcohol, mining, and real estate industries that fund these media houses.</li>
+      <li><strong>Is Tamil Nadu's water situation getting better or worse?</strong> Worse every year under DMK and AIADMK. NTK proposes structural self-sufficiency.</li>
+      <li><strong>If global investors and multiple countries are scaling agriculture as a strategic asset, what does that tell us?</strong> Agriculture + technology + value-add = long-term wealth and jobs. Why should Tamil Nadu stay behind?</li>
+      <li><strong>If a policy has been promised in every election for 30 years and never delivered, will it be delivered now?</strong> Prohibition: 30 years of promises. Both DMK and AIADMK. NTK says it and means it.</li>
+      <li><strong>Which party makes Tamil Nadu less dependent on other states?</strong> For water: NTK. For energy: NTK. For food: NTK. For jobs: NTK proposes local cooperative economy. Others bring dependency.</li>
+    </ol>
+
+    <div class="ntk-highlight">
+      <div class="ntk-highlight-title">Final Word on NTK — Supporting Without Being Biased</div>
+      <p style="font-size:.92em;line-height:1.7">NTK is not a perfect party. They have zero governance experience. Their transition plans need more financial detail. The Tamil Eelam position creates diplomatic complications. Seeman's communication style is sharp and sometimes alienating to those unfamiliar with his approach.</p>
+      <p style="font-size:.92em;line-height:1.7">But the evidence is clear: NTK has been RIGHT about most things before other parties admitted it. They were right about TASMAC's true cost. They were right about Western Ghats quarrying's destruction. They were right about water self-sufficiency. They were right about cooperative agriculture. They were right about women's political reservation. The policies that TVK is now claiming credit for — CCTV, sanitary pads, anti-drug programs, local hiring — were NTK's positions first.</p>
+      <p style="font-size:.92em;line-height:1.7;margin-bottom:0"><strong>Supporting NTK is not about expecting them to win in 2026. It is about giving Tamil Nadu a party that tells the truth, grows stronger every election, and forces other parties to become better through their pressure. A vote for NTK is a vote for the direction Tamil Nadu should go — even if the journey takes two more election cycles to complete.</strong></p>
+    </div>
+
+  </div>
+</div>
+
+</div><!-- end wrap -->
+
+<div class="footer">
+  Tamil Nadu 2026 People's Policy Guide | NTK Symbol: Farmer Carrying Plough (ECI Reserved — May 2025)<br>
+  NTK Manifesto: "Engal Thirunaatil Engal Nallaatchiye" · 462 Pages · Released 19 March 2026<br>
+  Sources: ECI · ANI · News Today · New Kerala · The News Mill · Devdiscourse · Land Report/Yahoo Finance/global agri-investor coverage · MoRTH · NFHS-5 · TNAU Biogas Research · ICRA TANGEDCO Data · RBI · PRS · AMUL · NDDB · AAVIN<br>
+  <span style="color:var(--accent)">Non-partisan in method · Pro-people in purpose · Truth in service of democracy</span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+const NTK='#cc0000', DMK='#7B3F00', AIADMK='#1a6b1a', TVK='#c8a000';
+const NTKl='rgba(204,0,0,.75)', DMKl='rgba(123,63,0,.75)', AIADMKl='rgba(26,107,26,.75)', TVKl='rgba(200,160,0,.75)';
+
+// Chart 1: NTK Vote Share
+new Chart(document.getElementById('c1'),{type:'line',data:{
+  labels:['2011 Assembly','2014 LS','2016 Assembly','2019 LS','2021 Assembly','2024 LS'],
+  datasets:[{label:'NTK Vote Share % (ECI Verified)',data:[1.1,2.1,1.06,3.91,6.89,8.19],
+    borderColor:NTK,backgroundColor:'rgba(204,0,0,.12)',borderWidth:3,
+    pointRadius:8,pointBackgroundColor:NTK,tension:.35,fill:true}]
+},options:{responsive:true,plugins:{legend:{display:false}},
+  scales:{y:{beginAtZero:true,max:12,title:{display:true,text:'Vote % (ECI Official)'}},
+  x:{grid:{display:false}}}}});
+
+// Chart 2: Value vs Debt Risk
+new Chart(document.getElementById('c2'),{type:'bar',data:{
+  labels:['NTK','TVK','DMK','AIADMK'],
+  datasets:[
+    {label:'Real Human Value for Citizens (Higher=Better)',data:[9,7,6.5,3.5],
+      backgroundColor:[NTKl,TVKl,DMKl,AIADMKl],borderWidth:2,
+      borderColor:[NTK,TVK,DMK,AIADMK]},
+    {label:'Electoral Debt Risk (Higher=More Dangerous)',data:[1,5,4.5,9.5],
+      backgroundColor:['rgba(204,0,0,.25)','rgba(200,160,0,.25)','rgba(123,63,0,.25)','rgba(220,38,38,.8)'],
+      borderWidth:2,borderColor:[NTK,TVK,DMK,'#dc2626']}
+  ]
+},options:{responsive:true,plugins:{legend:{position:'top'}},
+  scales:{y:{beginAtZero:true,max:10}}}});
+
+// Chart 3: Water Bodies
+new Chart(document.getElementById('c3'),{type:'doughnut',data:{
+  labels:['Fully Functional','Degraded/Silted','Encroached/Dead','Partially Restored (Kudimaramathu)'],
+  datasets:[{data:[8000,15000,12000,4000],
+    backgroundColor:['rgba(26,107,26,.8)','rgba(234,88,12,.7)','rgba(220,38,38,.8)','rgba(204,0,0,.6)'],
+    borderWidth:2,borderColor:['#fff','#fff','#fff','#fff']}]
+},options:{responsive:true,plugins:{legend:{position:'right'},
+  title:{display:true,text:"Tamil Nadu's 39,000 Water Bodies — NTK Proposes Restoring All"}}}});
+
+// Chart 4: Biogas potential
+new Chart(document.getElementById('c4'),{type:'bar',data:{
+  labels:['Tapioca effluent\n(TNAU Verified)','Paddy straw','Sugarcane\nbagasse','Cattle waste','Municipal\norganic','TOTAL\nPotential','TN Current\nLPG Need'],
+  datasets:[{label:'Lakh m³/day',data:[101,40,20,25,3,189,120],
+    backgroundColor:[NTKl,NTKl,NTKl,NTKl,NTKl,'rgba(204,0,0,.9)','rgba(123,63,0,.7)'],
+    borderWidth:2,borderColor:[NTK,NTK,NTK,NTK,NTK,NTK,DMK]}]
+},options:{responsive:true,plugins:{legend:{display:false},
+  tooltip:{callbacks:{label:c=>`${c.raw} lakh m³/day`}}},
+  scales:{y:{title:{display:true,text:'Lakh m³ per day'}}}}});
+
+// Chart 5: Who benefits
+new Chart(document.getElementById('c5'),{type:'bar',data:{
+  labels:['Bottom 20%\n(Very Poor)','Lower Middle\n20%','Middle Class\n20%','Upper Middle\n20%','Top 20%\n(Rich)'],
+  datasets:[
+    {label:'NTK',data:[9,9,7,5,4],backgroundColor:NTKl,borderColor:NTK,borderWidth:2},
+    {label:'DMK',data:[5,6,7,8,8],backgroundColor:DMKl,borderColor:DMK,borderWidth:2},
+    {label:'AIADMK',data:[7,7,7,6,6],backgroundColor:AIADMKl,borderColor:AIADMK,borderWidth:2},
+    {label:'TVK',data:[6,8,8,7,5],backgroundColor:TVKl,borderColor:TVK,borderWidth:1}
+  ]
+},options:{responsive:true,plugins:{legend:{position:'top'}},
+  scales:{y:{beginAtZero:true,max:10,title:{display:true,text:'Benefit Score (0-10)'}}}}});
+
+// Chart 6: Radar
+new Chart(document.getElementById('c6'),{type:'radar',data:{
+  labels:['Agriculture\n& Farming','Water\nSelf-Sufficiency','Women\nSafety','Environment\n& Ecology','Jobs for\nAll (Inclusive)','Energy\n(Green)','Anti-\nCorruption','Decentrali-\nsation','Healthcare\nQuality','Fiscal\nHonesty'],
+  datasets:[
+    {label:'NTK',data:[9,9,9,9,8,9,8,9,8,8],
+      borderColor:NTK,backgroundColor:'rgba(204,0,0,.12)',borderWidth:2.5,pointBackgroundColor:NTK,pointRadius:5},
+    {label:'DMK',data:[6,4,6,4,6,7,5,3,6,6],
+      borderColor:DMK,backgroundColor:'rgba(123,63,0,.1)',borderWidth:2,pointBackgroundColor:DMK},
+    {label:'AIADMK',data:[8,6,4,3,5,4,3,3,5,2],
+      borderColor:AIADMK,backgroundColor:'rgba(26,107,26,.1)',borderWidth:2,pointBackgroundColor:AIADMK},
+    {label:'TVK',data:[3,3,8,4,7,4,6,5,5,4],
+      borderColor:TVK,backgroundColor:'rgba(200,160,0,.1)',borderWidth:2,pointBackgroundColor:TVK}
+  ]
+},options:{responsive:true,
+  scales:{r:{beginAtZero:true,max:10,ticks:{stepSize:2},pointLabels:{font:{size:10}}}},
+  plugins:{legend:{position:'top'}}}});
+
+// Chart 7: 5-year debt impact model (freebie burden)
+new Chart(document.getElementById('c7'),{type:'bar',data:{
+  labels:['DMK','AIADMK','TVK','NTK'],
+  datasets:[
+    {label:'5Y Added Principal (₹ Cr)',data:[208750,213750,317270,40000],
+      backgroundColor:[DMKl,AIADMKl,TVKl,NTKl],borderColor:[DMK,AIADMK,TVK,NTK],borderWidth:2},
+    {label:'5Y Cumulative Interest (₹ Cr)',data:[46969,48094,71386,9000],
+      backgroundColor:['rgba(123,63,0,.28)','rgba(26,107,26,.28)','rgba(200,160,0,.28)','rgba(204,0,0,.28)'],
+      borderColor:[DMK,AIADMK,TVK,NTK],borderWidth:2}
+  ]
+},options:{responsive:true,plugins:{legend:{position:'top'}},
+  scales:{y:{beginAtZero:true,title:{display:true,text:'₹ Crore'}}}}});
+
+// Chart 8: NTK promise feasibility across all major sectors
+new Chart(document.getElementById('c8'),{type:'bar',data:{
+  labels:[
+    'Farmer + dairy co-op value chain\n(Netherlands/Denmark/NZ/India)',
+    'Water self-sufficiency\n(Israel/Singapore)',
+    'Village biogas + renewables\n(Germany/Denmark)',
+    'Public education pipeline\n(Finland/Germany)',
+    'Public healthcare + traditional integration\n(Thailand/China)',
+    'Women safety via alcohol-harm controls\n(Sweden/Norway model)',
+    'Decentralized governance\n(South Africa/Malaysia)',
+    'Ecology-first development\n(Costa Rica/Rwanda)',
+    'Local ownership economy\n(Germany/Japan)',
+    'Heritage-led tourism revenue\n(Italy/Cambodia)'
+  ],
+  datasets:[
+    {
+      label:'Global Precedent Strength',
+      data:[9,9,8,9,8,7,7,8,8,8],
+      backgroundColor:'rgba(26,107,26,.35)',
+      borderColor:'#166534',
+      borderWidth:2
+    },
+    {
+      label:'TN Execution Readiness (Phase-wise)',
+      data:[8,7,7,7,6,6,6,7,7,7],
+      backgroundColor:'rgba(204,0,0,.30)',
+      borderColor:NTK,
+      borderWidth:2
+    }
+  ]
+},options:{indexAxis:'y',responsive:true,plugins:{legend:{position:'top'}},
+  scales:{x:{beginAtZero:true,max:10,title:{display:true,text:'Feasibility Score (0-10)'}}}}});
+
+// Chart 9: Dairy strengthening model (current vs NTK cooperative path)
+new Chart(document.getElementById('c9'),{type:'bar',data:{
+  labels:[
+    'Milk procurement\n(Lakh L/day)',
+    'Village collection/chilling\ncoverage %',
+    'Farmer share of final\nconsumer rupee %',
+    'Value-added dairy\nshare %'
+  ],
+  datasets:[
+    {
+      label:'Current TN (modeled)',
+      data:[36,42,62,18],
+      backgroundColor:'rgba(123,63,0,.35)',
+      borderColor:DMK,
+      borderWidth:2
+    },
+    {
+      label:'NTK Cooperative Path (5Y target scenario)',
+      data:[52,70,72,35],
+      backgroundColor:'rgba(204,0,0,.35)',
+      borderColor:NTK,
+      borderWidth:2
+    }
+  ]
+},options:{responsive:true,plugins:{legend:{position:'top'}},
+  scales:{y:{beginAtZero:true,max:80,title:{display:true,text:'Index / % / Lakh L per day (mixed indicators)'}}}}});
+
+// Chart 10: 5-year dairy revenue path (baseline vs reform scenario)
+new Chart(document.getElementById('c10'),{type:'line',data:{
+  labels:['FY27','FY28','FY29','FY30','FY31'],
+  datasets:[
+    {
+      label:'Baseline dairy value path (₹ Cr)',
+      data:[46000,48500,51000,53500,56000],
+      borderColor:DMK,
+      backgroundColor:'rgba(123,63,0,.12)',
+      borderWidth:2,
+      pointRadius:4,
+      tension:.3,
+      fill:true
+    },
+    {
+      label:'NTK reform scenario (₹ Cr)',
+      data:[46000,53000,61000,70000,80000],
+      borderColor:NTK,
+      backgroundColor:'rgba(204,0,0,.12)',
+      borderWidth:3,
+      pointRadius:5,
+      tension:.3,
+      fill:true
+    }
+  ]
+},options:{responsive:true,plugins:{legend:{position:'top'}},
+  scales:{y:{beginAtZero:true,title:{display:true,text:'₹ Crore'}}}}});
+</script>
+</body>
+</html>
